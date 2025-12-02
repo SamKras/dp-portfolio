@@ -21,18 +21,21 @@
     <!-- SEO: описание -->
     <meta
       name="description"
-      content="Director of Photography and video editor for commercials, music videos and branded content. Based in Belgrade and Amsterdam, available for shoots in Serbia, Dubai and across Europe."
+      content="Director of Photography and video editor for commercials, music videos and branded content. Based in Belgrade, available for shoots in Serbia, Dubai and across Europe."
     />
 
-    <!-- GOOGLE ANALYTICS (GA4)
-         Когда в GA4 создашь Measurement ID вида G-XXXXXXXXXX:
-         1) сними комментарии <!-- ... --> с блока ниже
-         2) подставь свой ID вместо G-XXXXXXXXXX
-    -->
-    <meta
-      name="google-site-verification"
-      content="0gpyoPMXFDAEDswh6mqEQzBx6UcmJWvPXblVJFGJ4pY"
-    />
+    <!-- GOOGLE ANALYTICS (GA4) — твой реальный тег -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-98GWYJHHSN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-98GWYJHHSN");
+    </script>
 
     <style>
       :root {
@@ -430,7 +433,7 @@
         width: 100%;
         height: 300px;
         object-fit: cover;
-        transition: transform 0.6s ease, filter 0.6s.ease;
+        transition: transform 0.6s ease, filter 0.6s ease;
         filter: grayscale(15%) brightness(0.9);
       }
 
