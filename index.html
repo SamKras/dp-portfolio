@@ -6,13 +6,39 @@
       name="viewport"
       content="width=device-width, initial-scale=1"
     />
+
+    <!-- Верификация Google Search Console -->
+    <meta
+      name="google-site-verification"
+      content="0gpyoPMXFDAEDswh6mqEQzBx6UcmJWvPXblVJFGJ4pY"
+    />
+
+    <!-- SEO: заголовок -->
     <title>
-      Sam Krasilnikov - Director of Photography | Commercial Cinematography
+      Sam Kras – Director of Photography & Video Editor | Serbia, Dubai & Europe
     </title>
+
+    <!-- SEO: описание -->
     <meta
       name="description"
-      content="International Director of Photography specializing in commercial, food, and tech cinematography. Belgrade & Worldwide."
+      content="Director of Photography and video editor for commercials, music videos and branded content. Based in Belgrade and Amsterdam, available for shoots in Serbia, Dubai and across Europe."
     />
+
+    <!-- GOOGLE ANALYTICS (GA4)
+         Когда в GA4 создашь Measurement ID вида G-XXXXXXXXXX:
+         1) сними комментарии <!-- ... --> с блока ниже
+         2) подставь свой ID вместо G-XXXXXXXXXX
+    -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    -->
+
     <style>
       :root {
         --bg-primary: #1a1a1a;
@@ -42,6 +68,8 @@
         line-height: 1.6;
         overflow-x: hidden;
       }
+
+      /* HERO */
 
       .hero-dp {
         position: relative;
@@ -100,11 +128,11 @@
       }
 
       .hero-content h1 {
-        font-size: 82px;
+        font-size: 64px;
         font-weight: 300;
-        margin-bottom: 20px;
-        letter-spacing: -2px;
-        line-height: 1.1;
+        margin-bottom: 16px;
+        letter-spacing: -1.5px;
+        line-height: 1.15;
       }
 
       .hero-content h1 strong {
@@ -114,8 +142,8 @@
       }
 
       .hero-content h2 {
-        font-size: 24px;
-        margin-bottom: 30px;
+        font-size: 22px;
+        margin-bottom: 16px;
         font-weight: 300;
         letter-spacing: 1px;
         color: var(--text-secondary);
@@ -124,13 +152,13 @@
       .hero-content p {
         font-size: 16px;
         letter-spacing: 0.5px;
-        max-width: 600px;
+        max-width: 620px;
         margin: 0 auto;
         color: var(--text-secondary);
       }
 
       .hero-buttons {
-        margin-top: 50px;
+        margin-top: 40px;
         display: flex;
         gap: 20px;
         justify-content: center;
@@ -170,6 +198,8 @@
         border-color: var(--accent-gold);
         transform: translateY(-2px);
       }
+
+      /* SERVICES */
 
       .services-section {
         background: var(--bg-secondary);
@@ -235,6 +265,8 @@
         color: var(--text-secondary);
         line-height: 1.7;
       }
+
+      /* FEATURED */
 
       .featured-section {
         background: var(--bg-primary);
@@ -322,6 +354,8 @@
         letter-spacing: 1px;
       }
 
+      /* CAROUSEL */
+
       .carousel-section {
         background: var(--bg-secondary);
         padding: 100px 0;
@@ -401,7 +435,7 @@
         width: 100%;
         height: 300px;
         object-fit: cover;
-        transition: transform 0.6s ease, filter 0.6s ease;
+        transition: transform 0.6s ease, filter 0.6s.ease;
         filter: grayscale(15%) brightness(0.9);
       }
 
@@ -426,6 +460,8 @@
         letter-spacing: 0.3px;
         color: var(--text-primary);
       }
+
+      /* WORK GRIDS */
 
       .work-section {
         background: var(--bg-secondary);
@@ -514,6 +550,8 @@
         letter-spacing: 0.8px;
       }
 
+      /* PHILOSOPHY */
+
       .philosophy-section {
         background: var(--bg-card);
         padding: 120px 40px;
@@ -550,6 +588,8 @@
         max-width: 1400px;
         margin: 0 auto;
       }
+
+      /* PRODUCTION */
 
       .production-section {
         background: var(--bg-primary);
@@ -630,6 +670,8 @@
         box-shadow: 0 8px 30px rgba(212, 175, 55, 0.4);
       }
 
+      /* ABOUT */
+
       #about {
         background: var(--bg-secondary);
         padding: 120px 40px;
@@ -650,7 +692,7 @@
       }
 
       #about p {
-        font-size: 22px;
+        font-size: 20px;
         line-height: 1.8;
         font-weight: 300;
         letter-spacing: 0.3px;
@@ -684,6 +726,8 @@
         letter-spacing: 1px;
         text-transform: uppercase;
       }
+
+      /* CONTACT */
 
       #contact {
         background: var(--bg-primary);
@@ -740,6 +784,8 @@
         color: var(--accent-gold);
       }
 
+      /* ADAPTIVE */
+
       @media (max-width: 1400px) {
         .featured-grid {
           grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -758,20 +804,60 @@
         .featured-grid {
           grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         }
+
+        .hero-content h1 {
+          font-size: 52px;
+        }
       }
 
       @media (max-width: 768px) {
+        .hero-dp {
+          height: auto;
+          padding: 80px 20px 60px;
+        }
+
         .hero-content h1 {
-          font-size: 48px;
+          font-size: 34px;
+          line-height: 1.2;
+        }
+
+        .hero-content h2 {
+          font-size: 18px;
+        }
+
+        .hero-content p {
+          font-size: 14px;
+        }
+
+        .hero-buttons {
+          flex-direction: column;
+          align-items: stretch;
+        }
+
+        .btn-primary,
+        .btn-secondary {
+          width: 100%;
+          text-align: center;
         }
 
         .featured-title {
-          font-size: 42px;
+          font-size: 36px;
         }
 
         .carousel-title,
         .work-title {
-          font-size: 36px;
+          font-size: 30px;
+        }
+
+        .services-section,
+        .featured-section,
+        .carousel-section,
+        .work-section,
+        .philosophy-section,
+        #about,
+        .production-section,
+        #contact {
+          padding: 60px 20px;
         }
 
         .work-grid,
@@ -784,11 +870,29 @@
         }
 
         .carousel-item {
-          width: 320px;
+          width: 280px;
         }
 
         .production-grid {
           grid-template-columns: 1fr;
+        }
+
+        .philosophy-quote {
+          padding: 0 10px;
+          font-size: 18px;
+        }
+
+        #about p {
+          font-size: 18px;
+        }
+
+        .featured-image {
+          height: 260px;
+        }
+
+        .carousel-image,
+        .work-cover {
+          height: 220px;
         }
       }
     </style>
@@ -796,19 +900,22 @@
   <body>
     <!-- HERO -->
     <section class="hero-dp">
-      <!-- Заменишь src на реальное видео, когда зальёшь его куда-то -->
       <video class="hero-video" autoplay muted loop playsinline>
         <source src="/videos/showreel.mp4" type="video/mp4" />
       </video>
       <div class="hero-overlay"></div>
 
       <div class="hero-content">
-        <div class="hero-badge">Director of Photography</div>
-        <h1><strong>SAM KRASILNIKOV</strong></h1>
-        <h2>Commercial · Food · Tech · Lifestyle</h2>
+        <div class="hero-badge">Director of Photography · Video Editor</div>
+        <h1>
+          <strong>SAM KRAS</strong>
+        </h1>
+        <h2>
+          Commercials · Music Videos · Branded Content – Serbia, Dubai, Europe
+        </h2>
         <p>
-          Worldwide · Crafting cinematic visuals for brands that
-          demand excellence
+          Director of Photography and video editor based in Belgrade & Amsterdam.
+          Available for shoots in Serbia, Dubai and across Europe.
         </p>
         <div class="hero-buttons">
           <a href="#featured" class="btn-primary">View Portfolio</a>
@@ -823,8 +930,8 @@
         <div class="services-header">
           <h2>Services</h2>
           <p>
-            Specialized cinematography that elevates your brand and tells
-            compelling stories
+            Cinematography and editing for brands, agencies and artists in
+            Serbia, Dubai and across Europe.
           </p>
         </div>
         <div class="services-grid">
@@ -832,22 +939,22 @@
             <h3>Commercial Production</h3>
             <p>
               High-end commercial cinematography for brands that demand
-              excellence
+              excellence.
             </p>
           </div>
           <div class="service-card">
             <h3>Food &amp; Product</h3>
             <p>
-              Precise lighting and composition that makes products irresistible
+              Precise lighting and composition that makes products irresistible.
             </p>
           </div>
           <div class="service-card">
             <h3>Corporate &amp; Tech</h3>
-            <p>Clean, modern visuals for innovative companies</p>
+            <p>Clean, modern visuals for innovative companies.</p>
           </div>
           <div class="service-card">
             <h3>Documentary</h3>
-            <p>Authentic storytelling with cinematic quality</p>
+            <p>Authentic storytelling with cinematic quality.</p>
           </div>
         </div>
       </div>
@@ -859,7 +966,7 @@
         <div class="featured-header">
           <h2 class="featured-title">Selected Work</h2>
           <p class="featured-subtitle">
-            Featured projects that showcase my approach to visual storytelling
+            Featured projects that showcase my approach to visual storytelling.
           </p>
         </div>
         <div class="featured-grid">
@@ -963,13 +1070,11 @@
       <div class="carousel-header">
         <h2 class="carousel-title">All Projects</h2>
         <p class="carousel-subtitle">
-          Explore the complete collection of my work
+          Explore the complete collection of my work.
         </p>
       </div>
       <div class="carousel-wrapper">
         <div class="carousel-track">
-          <!-- Дальше просто руками вставлены все проекты, которые были в allProjects -->
-
           <a
             href="https://youtu.be/8fKJ1K_5ork"
             class="carousel-item"
@@ -1149,7 +1254,7 @@
         <div class="work-header">
           <h2 class="work-title">Documentary Work</h2>
           <p class="work-description">
-            Authentic stories captured with respect and intention
+            Authentic stories captured with respect and intention.
           </p>
         </div>
         <div class="work-grid">
@@ -1244,12 +1349,16 @@
         <div class="work-header">
           <h2 class="work-title">Selected Edits</h2>
           <p class="work-description">
-            Crafting narrative through rhythm and emotion
+            Crafting narrative through rhythm and emotion.
           </p>
         </div>
         <div
           class="work-grid"
-          style="grid-template-columns: repeat(3, 1fr); max-width: 1400px; margin: 0 auto;"
+          style="
+            grid-template-columns: repeat(3, 1fr);
+            max-width: 1400px;
+            margin: 0 auto;
+          "
         >
           <a
             href="https://youtube.com/shorts/gObhtyabLVk"
@@ -1323,7 +1432,7 @@
         <div class="work-header">
           <h2 class="work-title">Interviews &amp; Podcasts</h2>
           <p class="work-description">
-            Conversations with innovators and creators
+            Conversations with innovators and creators.
           </p>
         </div>
         <div class="interview-grid">
@@ -1433,10 +1542,10 @@
       <div class="about-container">
         <h2>About</h2>
         <p>
-          International Director of Photography working across Europe and the
-          US. Specialized in commercial cinematography with a strong focus on
-          food, product, lifestyle storytelling, precise lighting, and clean
-          composition.
+          International Director of Photography and video editor working across
+          Europe, Serbia and Dubai. Specialized in commercial cinematography
+          with a strong focus on food, product and lifestyle storytelling,
+          precise lighting, and clean composition.
         </p>
         <div class="about-stats">
           <div class="stat-item">
@@ -1460,7 +1569,7 @@
       <div class="production-container">
         <div class="production-header">
           <h2>Production Team Projects</h2>
-          <p>Collaborative work with leading production companies</p>
+          <p>Collaborative work with leading production companies.</p>
         </div>
         <div class="production-grid">
           <a
@@ -1528,11 +1637,14 @@
       <div class="contact-container">
         <h2>Let's Work Together</h2>
         <p class="contact-subtitle">
-          Ready to create something exceptional? Get in touch.
+          Ready to create something exceptional? Get in touch about projects in
+          Serbia, Dubai or across Europe.
         </p>
         <div class="contact-info">
           <div class="contact-item">
-            <a href="mailto:krasilniksem@gmail.com">krasilniksem@gmail.com</a>
+            <a href="mailto:krasilniksem@gmail.com"
+              >krasilniksem@gmail.com</a
+            >
           </div>
           <div class="contact-item">
             <a
@@ -1543,7 +1655,7 @@
               @vazivskyfilm
             </a>
           </div>
-          <div class="contact-item">EU / Worldwide</div>
+          <div class="contact-item">Serbia · Dubai · EU / Worldwide</div>
         </div>
         <a href="mailto:krasilniksem@gmail.com" class="btn-primary">
           Send a Message
@@ -1552,4 +1664,3 @@
     </section>
   </body>
 </html>
-
