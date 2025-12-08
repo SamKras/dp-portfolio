@@ -88,6 +88,69 @@
         overflow-x: hidden;
       }
 
+      /* ====== ДОБАВЛЕНО: НАВИГАЦИЯ (МЕНЮ) ====== */
+
+      .main-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 64px;
+        background: rgba(26, 26, 26, 0.9);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--border-subtle);
+        z-index: 1000;
+      }
+
+      .nav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 24px;
+      }
+
+      .nav-logo {
+        font-weight: 600;
+        letter-spacing: 2px;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: var(--accent-gold);
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 24px;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .nav-links a {
+        color: var(--text-secondary);
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+
+      .nav-links a:hover {
+        color: var(--accent-gold);
+      }
+
+      @media (max-width: 768px) {
+        .nav-links {
+          gap: 14px;
+          font-size: 12px;
+        }
+
+        .nav-container {
+          padding: 0 12px;
+        }
+      }
+
+      /* ====== КОНЕЦ: МЕНЮ ====== */
+
       /* HERO */
 
       .hero-dp {
@@ -101,6 +164,8 @@
         text-align: center;
         padding: 40px 20px;
         overflow: hidden;
+        /* ДОБАВЛЕНО: отступ сверху, чтобы не залезать под фикс-меню */
+        padding-top: 100px;
       }
 
       .hero-video {
@@ -917,6 +982,18 @@
     </style>
   </head>
   <body>
+    <!-- ДОБАВЛЕННОЕ МЕНЮ -->
+    <header class="main-header">
+      <div class="nav-container">
+        <div class="nav-logo">SAM KRAS</div>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="blog.html">Blog &amp; News</a>
+          <a href="#contact">Contacts</a>
+        </nav>
+      </div>
+    </header>
+
     <!-- HERO -->
     <section class="hero-dp">
       <video class="hero-video" autoplay muted loop playsinline>
@@ -1683,4 +1760,5 @@
     </section>
   </body>
 </html>
+
 
