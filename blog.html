@@ -1,186 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-    />
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  />
 
-    <title>Blog &amp; News – Sam Kras</title>
-    <meta
-      name="description"
-      content="Blog and news from Director of Photography & video editor Sam Kras – notes on cinematography, editing and recent projects in Serbia, Dubai and Europe."
-    />
+  <!-- PRIMARY SEO -->
+  <title>Blog &amp; News – Sam Kras | Cinematography & Editing Notes</title>
 
-    <!-- Можно при желании добавить твои OG и Analytics, скопировав из index.html -->
+  <meta
+    name="description"
+    content="Blog and news from Director of Photography & video editor Sam Kras. Case studies, behind the scenes and notes on cinematography, editing and production in Serbia, Dubai and Europe."
+  />
 
-    <style>
-      :root {
-        --bg-primary: #1a1a1a;
-        --bg-secondary: #232323;
-        --bg-card: #2a2a2a;
-        --bg-hover: #323232;
-        --text-primary: #e8e8e8;
-        --text-secondary: #b8b8b8;
-        --text-muted: #888888;
-        --accent-gold: #d4af37;
-        --accent-warm: #c9a961;
-        --border-subtle: #3a3a3a;
-        --border-medium: #4a4a4a;
-      }
+  <meta
+    name="keywords"
+    content="cinematography blog, dop blog, camera work tips, video editing tips, commercial cinematography, food cinematography, documentary filmmaking, Serbia, Dubai, Europe"
+  />
 
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+  <!-- CANONICAL -->
+  <link
+    rel="canonical"
+    href="https://samkras.github.io/dp-portfolio/blog.html"
+  />
 
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          sans-serif;
-        background: var(--bg-primary);
-        color: var(--text-primary);
-        line-height: 1.6;
-        overflow-x: hidden;
-      }
+  <!-- OPEN GRAPH -->
+  <meta
+    property="og:title"
+    content="Blog & News – Sam Kras | Cinematography & Editing Notes"
+  />
+  <meta
+    property="og:description"
+    content="Case studies, behind the scenes and notes on cinematography, editing and commercial production by Director of Photography & video editor Sam Kras."
+  />
+  <meta
+    property="og:image"
+    content="https://github.com/SamKras/dp-portfolio/blob/main/Untitled00086404.jpg?raw=true"
+  />
+  <meta
+    property="og:url"
+    content="https://samkras.github.io/dp-portfolio/blog.html"
+  />
+  <meta property="og:type" content="article" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
-      /* NAVBAR – тот же, что в index.html */
-      .main-header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 64px;
-        background: rgba(26, 26, 26, 0.9);
-        backdrop-filter: blur(10px);
-        border-bottom: 1px solid var(--border-subtle);
-        z-index: 1000;
-      }
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Blog & News – Sam Kras | Cinematography & Editing Notes"
+  />
+  <meta
+    name="twitter:description"
+    content="Blog and news from Director of Photography & video editor Sam Kras – cinematography and editing insights from projects in Serbia, Dubai and Europe."
+  />
+  <meta
+    name="twitter:image"
+    content="https://github.com/SamKras/dp-portfolio/blob/main/Untitled00086404.jpg?raw=true"
+  />
 
-      .nav-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 24px;
-      }
+  <!-- Можно дублировать Analytics сюда, чтобы отслеживать блог отдельно -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-98GWYJHHSN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-98GWYJHHSN");
+  </script>
 
-      .nav-logo {
-        font-weight: 600;
-        letter-spacing: 2px;
-        font-size: 14px;
-        text-transform: uppercase;
-        color: var(--accent-gold);
-      }
-
-      .nav-links {
-        display: flex;
-        gap: 24px;
-        font-size: 14px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-      }
-
-      .nav-links a {
-        color: var(--text-secondary);
-        text-decoration: none;
-        transition: color 0.2s ease;
-      }
-
-      .nav-links a:hover {
-        color: var(--accent-gold);
-      }
-
-      @media (max-width: 768px) {
-        .nav-links {
-          gap: 14px;
-          font-size: 12px;
-        }
-
-        .nav-container {
-          padding: 0 12px;
-        }
-      }
-
-      /* Контент страницы блога */
-
-      .page-wrapper {
-        max-width: 960px;
-        margin: 0 auto;
-        padding: 100px 20px 60px; /* 100px сверху под фиксированную шапку */
-      }
-
-      .page-title {
-        font-size: 48px;
-        font-weight: 300;
-        letter-spacing: -1px;
-        margin-bottom: 10px;
-      }
-
-      .page-subtitle {
-        font-size: 18px;
-        color: var(--text-secondary);
-        margin-bottom: 40px;
-        max-width: 600px;
-      }
-
-      .posts-list {
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-      }
-
-      .post-card {
-        padding: 24px 0;
-        border-top: 1px solid var(--border-subtle);
-      }
-
-      .post-title {
-        font-size: 24px;
-        margin-bottom: 6px;
-      }
-
-      .post-meta {
-        font-size: 13px;
-        color: var(--text-muted);
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        margin-bottom: 12px;
-      }
-
-      .post-excerpt {
-        font-size: 16px;
-        color: var(--text-secondary);
-      }
-
-      .back-link {
-        display: inline-block;
-        margin-top: 40px;
-        font-size: 14px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        color: var(--accent-gold);
-        text-decoration: none;
-      }
-
-      .back-link:hover {
-        text-decoration: underline;
-      }
-
-      @media (max-width: 768px) {
-        .page-title {
-          font-size: 32px;
-        }
-
-        .page-subtitle {
-          font-size: 16px;
-        }
-      }
-    </style>
-  </head>
+  <style>
+    /* ... здесь оставь стили из текущего blog.html ... */
+  </style>
+</head>
   <body>
     <!-- Общее меню -->
     <header class="main-header">
