@@ -63,73 +63,130 @@
       content="https://github.com/SamKras/dp-portfolio/blob/main/Untitled00086404.jpg?raw=true"
     />
 
-    <!-- STRUCTURED DATA (Person + VideoObject + LocalBusiness) -->
+    <!-- STRUCTURED DATA (Person + VideoObject + LocalBusiness + Reviews) -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "Person",
-            "@id": "https://samkras.github.io/dp-portfolio/#person",
-            "name": "Sam Krasilnikov",
-            "jobTitle": "Director of Photography & Video Editor",
-            "description": "Director of Photography and video editor specialising in commercials, music videos, food & product and branded content.",
-            "url": "https://samkras.github.io/dp-portfolio/",
-            "image": "https://github.com/SamKras/dp-portfolio/blob/main/Untitled00086404.jpg?raw=true",
-            "sameAs": [
-              "https://instagram.com/vazivskyfilm"
-            ],
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Belgrade",
-              "addressCountry": "RS"
-            },
-            "areaServed": [
-              "Serbia",
-              "Dubai",
-              "Europe"
-            ]
-          },
-          {
-            "@type": "VideoObject",
-            "@id": "https://samkras.github.io/dp-portfolio/#showreel",
-            "name": "Showreel – Director of Photography & Video Editor Sam Krasilnikov",
-            "description": "Showreel featuring commercials, music videos and branded content shot and edited by Director of Photography & video editor Sam Krasilnikov.",
-            "thumbnailUrl": [
-              "https://github.com/SamKras/dp-portfolio/blob/main/Untitled00086404.jpg?raw=true"
-            ],
-            "uploadDate": "2024-01-01",
-            "inLanguage": "en",
-            "genre": "Commercial cinematography",
-            "contentUrl": "https://samkras.github.io/dp-portfolio/videos/showreel.mp4",
-            "creator": {
-              "@id": "https://samkras.github.io/dp-portfolio/#person"
-            }
-          },
-          {
-            "@type": "LocalBusiness",
-            "@id": "https://samkras.github.io/dp-portfolio/#dubai-videographer",
-            "name": "Sam Krasilnikov – Dubai Videographer & Director of Photography",
-            "image": "https://github.com/SamKras/dp-portfolio/blob/main/Untitled00086404.jpg?raw=true",
-            "url": "https://samkras.github.io/dp-portfolio/",
-            "description": "Director of Photography and videographer available for commercial shoots in Dubai, specialising in food, product and lifestyle cinematography.",
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Dubai",
-              "addressCountry": "AE"
-            },
-            "areaServed": [
-              "Dubai",
-              "United Arab Emirates",
-              "Europe"
-            ],
-            "telephone": "",
-            "sameAs": [
-              "https://instagram.com/vazivskyfilm"
-            ]
-          }
-        ]
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://samkras.github.io/dp-portfolio/#person",
+      "name": "Sam Krasilnikov",
+      "jobTitle": "Director of Photography & Video Editor",
+      "description": "Director of Photography and video editor specialising in commercials, music videos, food & product and branded content.",
+      "url": "https://samkras.github.io/dp-portfolio/",
+      "image": "https://github.com/SamKras/dp-portfolio/blob/main/Untitled00086404.jpg?raw=true",
+      "sameAs": [
+        "https://instagram.com/vazivskyfilm"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Belgrade",
+        "addressCountry": "RS"
+      },
+      "areaServed": [
+        "Serbia",
+        "Dubai",
+        "Europe"
+      ]
+    },
+    {
+      "@type": "VideoObject",
+      "@id": "https://samkras.github.io/dp-portfolio/#showreel",
+      "name": "Showreel – Director of Photography & Video Editor Sam Krasilnikov",
+      "description": "Showreel featuring commercials, music videos and branded content shot and edited by Director of Photography & video editor Sam Krasilnikov.",
+      "thumbnailUrl": [
+        "https://github.com/SamKras/dp-portfolio/blob/main/Untitled00086404.jpg?raw=true"
+      ],
+      "uploadDate": "2024-01-01",
+      "inLanguage": "en",
+      "genre": "Commercial cinematography",
+      "contentUrl": "https://samkras.github.io/dp-portfolio/videos/showreel.mp4",
+      "creator": {
+        "@id": "https://samkras.github.io/dp-portfolio/#person"
       }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://samkras.github.io/dp-portfolio/#dubai-videographer",
+      "name": "Sam Krasilnikov – Dubai Videographer & Director of Photography",
+      "image": "https://github.com/SamKras/dp-portfolio/blob/main/Untitled00086404.jpg?raw=true",
+      "url": "https://samkras.github.io/dp-portfolio/",
+      "description": "Director of Photography and videographer available for commercial shoots in Dubai, specialising in food, product and lifestyle cinematography.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Dubai",
+        "addressCountry": "AE"
+      },
+      "areaServed": [
+        "Dubai",
+        "United Arab Emirates",
+        "Europe"
+      ],
+      "telephone": "",
+      "sameAs": [
+        "https://instagram.com/vazivskyfilm"
+      ]
+    },
+    {
+      "@type": "Review",
+      "@id": "https://samkras.github.io/dp-portfolio/#review-maryna-mazukh",
+      "itemReviewed": {
+        "@id": "https://samkras.github.io/dp-portfolio/#person"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Maryna Mazukh",
+        "jobTitle": "Cinematographer & Founder at InLight Films"
+      },
+      "reviewBody": "I had the pleasure of working with Semyon Krasilnikov as Director of Photography on several video shoots under InLight Films. His eye for composition, lighting and movement consistently elevates every project we collaborate on. Beyond his impressive craft, he is reliable, responsive, and a joy to work with — always bringing positive energy and thoughtful input.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "datePublished": "2025-12-01"
+    },
+    {
+      "@type": "Review",
+      "@id": "https://samkras.github.io/dp-portfolio/#review-marina-mogilko",
+      "itemReviewed": {
+        "@id": "https://samkras.github.io/dp-portfolio/#person"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Marina Mogilko",
+        "jobTitle": "Founder, Silicon Valley Girl & Creator"
+      },
+      "reviewBody": "For my brand Silicon Valley Girl, video is our main product. Semyon didn't just shoot footage; he became a part of the team that thinks in terms of content and conversion. He ensured impeccable shooting quality and incredible speed in processing material, and his attention to detail in lighting, sound and editing helped raise the quality bar for our content and business metrics.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "datePublished": "2025-11-07"
+    },
+    {
+      "@type": "Review",
+      "@id": "https://samkras.github.io/dp-portfolio/#review-maria-borisova",
+      "itemReviewed": {
+        "@id": "https://samkras.github.io/dp-portfolio/#person"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Maria Borisova",
+        "jobTitle": "Creative Producer"
+      },
+      "reviewBody": "I had the pleasure of working with Semyon on multiple projects in my role as a Producer. He is a reliable, talented and highly skilled videographer who arrives on time, communicates clearly and approaches every production challenge with a calm, solutions-oriented mindset. He is receptive to feedback, collaborative, and always goes the extra mile to deliver results that exceed expectations.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "datePublished": "2025-11-06"
+    }
+  ]
+}
     </script>
 
     <!-- GA -->
@@ -778,7 +835,7 @@
       <section id="why" class="section">
         <div class="section-header">
           <h2 class="section-title">Why choose me</h2>
-          <p class="section-subtile">
+          <p class="section-subtitle">
             A mix of commercial discipline and documentary intuition.
           </p>
         </div>
@@ -1432,7 +1489,7 @@
               of content and conversion.”
             </p>
             <p class="testimonial-text">
-              “Professionalism and speed: Semyon ensured not only impeccable
+              “Professionalism and Speed: Semyon ensured not only impeccable
               shooting quality but also incredible speed in processing the
               material, which is critical for our dynamic content schedule. He
               quickly grasped our entrepreneurial focus. Every video was clean,
@@ -1527,5 +1584,6 @@
     </main>
   </body>
 </html>
+
 
 
