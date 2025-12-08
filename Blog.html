@@ -1,1 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Blog &amp; News – Sam Kras</title>
+    <meta
+      name="description"
+      content="Blog and news from Director of Photography & video editor Sam Kras – notes on cinematography, editing and projects."
+    />
+
+    <!-- Можно скопировать сюда те же OG и Analytics, что и в index.html -->
+
+    <style>
+      :root {
+        --bg-primary: #1a1a1a;
+        --bg-secondary: #232323;
+        --bg-card: #2a2a2a;
+        --bg-hover: #323232;
+        --text-primary: #e8e8e8;
+        --text-secondary: #b8b8b8;
+        --text-muted: #888888;
+        --accent-gold: #d4af37;
+        --accent-warm: #c9a961;
+        --border-subtle: #3a3a3a;
+        --border-medium: #4a4a4a;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          sans-serif;
+        background: var(--bg-primary);
+        color: var(--text-primary);
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+
+      /* тот же NAVBAR, что и в index.html */
+
+      .main-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 64px;
+        background: rgba(26, 26, 26, 0.9);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--border-subtle);
+        z-index: 1000;
+      }
+
+      .nav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 24px;
+      }
+
+      .nav-logo {
+        font-weight: 600;
+        letter-spacing: 2px;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: var(--accent-gold);
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 24px;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .nav-links a {
+        color: var(--text-secondary);
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+
+      .nav-links a:hover {
+        color: var(--accent-gold);
+      }
+
+      @media (max-width: 768px) {
+        .nav-links {
+          gap: 14px;
+          font-size: 12px;
+        }
+
+        .nav-container {
+          padding: 0 12px;
+        }
+      }
+
+      .page-wrapper {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 100px 20px 60px; /* 100px сверху под фиксированное меню */
+      }
+
+      .page-title {
+        font-size: 48px;
+        font-weight: 300;
+        letter-spacing: -1px;
+        margin-bottom: 10px;
+      }
+
+      .page-subtitle {
+        font-size: 18px;
+        color: var(--text-secondary);
+        margin-bottom: 40px;
+      }
+
+      .posts-list {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+      }
+
+      .post-card {
+        padding: 24px 0;
+        border-top: 1px solid var(--border-subtle);
+      }
+
+      .post-title {
+        font-size: 24px;
+        margin-bottom: 6px;
+      }
+
+      .post-meta {
+        font-size: 13px;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 12px;
+      }
+
+      .post-excerpt {
+        font-size: 16px;
+        color: var(--text-secondary);
+      }
+
+      .back-link {
+        display: inline-block;
+        margin-top: 40px;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: var(--accent-gold);
+        text-decoration: none;
+      }
+
+      .back-link:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ТО ЖЕ МЕНЮ -->
+    <header class="main-header">
+      <div class="nav-container">
+        <div class="nav-logo">SAM KRAS</div>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="blog.html">Blog &amp; News</a>
+          <a href="index.html#contact">Contacts</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-wrapper">
+      <h1 class="page-title">Blog &amp; News</h1>
+      <p class="page-subtitle">
+        Notes on cinematography, editing and recent projects.
+      </p>
+
+      <section class="posts-list">
+        <article class="post-card">
+          <h2 class="post-title">
+            Shooting food commercials: light, texture and motion
+          </h2>
+          <div class="post-meta">Case study · Food &amp; Product</div>
+          <p class="post-excerpt">
+            Breakdown of a typical food commercial: how I build lighting layers,
+            choose lenses and plan motion to make products look alive on screen.
+          </p>
+        </article>
+
+        <article class="post-card">
+          <h2 class="post-title">
+            Documentary camera work: staying invisible
+          </h2>
+          <div class="post-meta">Process · Documentary</div>
+          <p class="post-excerpt">
+            Notes from weddings and corporate documentaries: how to move, where
+            to stand and how to anticipate key emotional beats without
+            directing people.
+          </p>
+        </article>
+
+        <article class="post-card">
+          <h2 class="post-title">
+            Editing rhythm for music videos and ads
+          </h2>
+          <div class="post-meta">Craft · Editing</div>
+          <p class="post-excerpt">
+            How I think about tempo, silence and impact frames when cutting
+            music videos and short commercial spots.
+          </p>
+        </article>
+      </section>
+
+      <a href="index.html" class="back-link">← Back to Home</a>
+    </main>
+  </body>
+</html>
 
