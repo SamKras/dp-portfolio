@@ -14,7 +14,7 @@
 
     <meta
       name="description"
-      content="Full portfolio of commercials, music videos, food & product and branded content by Director of Photography & video editor Sam Kras. Based in Belgrade, available in Dubai and across Europe."
+      content="Portfolio of commercials, music videos, food & product and branded content by Director of Photography & video editor Sam Kras. Based in Belgrade, available in Dubai and across Europe."
     />
 
     <meta
@@ -34,7 +34,7 @@
     />
     <meta
       property="og:description"
-      content="Portfolio of commercials, music videos, food & product and branded content by Director of Photography & video editor Sam Kras."
+      content="Commercials, music videos, food & product and branded content shot and edited by Director of Photography & video editor Sam Kras."
     />
     <meta
       property="og:image"
@@ -56,7 +56,7 @@
     />
     <meta
       name="twitter:description"
-      content="Full portfolio of commercials, music videos, food & product and branded content by Director of Photography & video editor Sam Kras."
+      content="Portfolio of commercials, music videos, food & product and branded content by Director of Photography & video editor Sam Kras."
     />
     <meta
       name="twitter:image"
@@ -132,7 +132,7 @@
       }
     </script>
 
-    <!-- GA (опционально, можно повторить как в index.html) -->
+    <!-- GA -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-98GWYJHHSN"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -173,7 +173,7 @@
         overflow-x: hidden;
       }
 
-      /* NAV – такой же, как в index.html */
+      /* NAV */
       .main-header {
         position: fixed;
         top: 0;
@@ -236,10 +236,10 @@
       .page-wrapper {
         max-width: 1200px;
         margin: 0 auto;
-        padding: 100px 20px 80px; /* 100px сверху под меню */
+        padding: 100px 20px 80px; /* 100px под меню */
       }
 
-      .page-title {
+      h1.page-title {
         font-size: 48px;
         font-weight: 300;
         letter-spacing: -1px;
@@ -250,10 +250,9 @@
         font-size: 18px;
         color: var(--text-secondary);
         margin-bottom: 40px;
-        max-width: 700px;
+        max-width: 800px;
       }
 
-      /* Простая сетка секций */
       .section {
         margin-bottom: 80px;
       }
@@ -411,13 +410,267 @@
         box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
       }
 
+      /* Blocks reused from index (portfolio sections) */
+
+      .featured-section,
+      .carousel-section,
+      .work-section,
+      .philosophy-section {
+        background: transparent;
+        border-top: 1px solid var(--border-subtle);
+        padding: 80px 0;
+      }
+
+      .featured-container,
+      .work-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 0;
+      }
+
+      .featured-header,
+      .work-header {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      .featured-title,
+      .work-title {
+        font-size: 40px;
+        font-weight: 300;
+        letter-spacing: -1px;
+        margin-bottom: 15px;
+      }
+
+      .featured-subtitle,
+      .work-description {
+        font-size: 16px;
+        color: var(--text-secondary);
+      }
+
+      .featured-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 40px;
+      }
+
+      .featured-item {
+        position: relative;
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        overflow: hidden;
+        background: var(--bg-card);
+        border: 1px solid var(--border-subtle);
+        transition: all 0.5s ease;
+      }
+
+      .featured-item:hover {
+        transform: translateY(-6px);
+        border-color: var(--accent-gold);
+      }
+
+      .featured-image {
+        width: 100%;
+        height: 320px;
+        object-fit: cover;
+        transition: transform 0.7s ease, filter 0.7s ease;
+        filter: grayscale(20%) brightness(0.85);
+      }
+
+      .featured-item:hover .featured-image {
+        transform: scale(1.05);
+        filter: grayscale(0%) brightness(1);
+      }
+
+      .featured-info {
+        padding: 24px;
+        background: var(--bg-card);
+      }
+
+      .featured-name {
+        font-size: 22px;
+        font-weight: 400;
+        margin-bottom: 6px;
+      }
+
+      .featured-role {
+        font-size: 13px;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .carousel-section {
+        padding: 80px 0 60px;
+      }
+
+      .carousel-header {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .carousel-title {
+        font-size: 32px;
+        font-weight: 300;
+        margin-bottom: 10px;
+      }
+
+      .carousel-subtitle {
+        font-size: 15px;
+        color: var(--text-secondary);
+      }
+
+      .carousel-wrapper {
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 0 0 20px;
+        scrollbar-width: thin;
+        scrollbar-color: var(--accent-gold) var(--bg-card);
+      }
+
+      .carousel-track {
+        display: flex;
+        gap: 24px;
+        width: max-content;
+      }
+
+      .carousel-item {
+        flex-shrink: 0;
+        width: 320px;
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        position: relative;
+        overflow: hidden;
+        border: 1px solid var(--border-subtle);
+        transition: all 0.4s ease;
+      }
+
+      .carousel-item:hover {
+        border-color: var(--accent-gold);
+        transform: translateY(-4px);
+      }
+
+      .carousel-image {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        transition: transform 0.6s ease, filter 0.6s ease;
+        filter: grayscale(15%) brightness(0.9);
+      }
+
+      .carousel-item:hover .carousel-image {
+        transform: scale(1.08);
+        filter: grayscale(0%) brightness(1);
+      }
+
+      .carousel-label {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 16px;
+        background: linear-gradient(
+          to top,
+          rgba(26, 26, 26, 0.95),
+          transparent
+        );
+        font-size: 14px;
+      }
+
+      .work-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 28px;
+      }
+
+      .work-item {
+        position: relative;
+        overflow: hidden;
+        text-decoration: none;
+        color: inherit;
+        display: block;
+      }
+
+      .work-cover {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border: 1px solid var(--border-subtle);
+        transition: transform 0.6s ease, filter 0.6s ease;
+      }
+
+      .work-item:hover .work-cover {
+        transform: scale(1.05);
+        filter: brightness(1.1);
+      }
+
+      .work-cover.zoom {
+        transform: scale(1.2);
+      }
+
+      .work-item:hover .work-cover.zoom {
+        transform: scale(1.25);
+      }
+
+      .work-details {
+        padding: 14px 0;
+      }
+
+      .work-item-title {
+        font-size: 18px;
+        margin-bottom: 4px;
+      }
+
+      .work-role {
+        font-size: 13px;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+      }
+
+      .philosophy-section {
+        padding: 80px 0;
+        border-top: 1px solid var(--border-subtle);
+      }
+
+      .philosophy-container {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .philosophy-section h2 {
+        font-size: 32px;
+        font-weight: 300;
+        margin-bottom: 24px;
+      }
+
+      .philosophy-quote {
+        font-size: 18px;
+        line-height: 1.8;
+        color: var(--text-secondary);
+      }
+
+      .interview-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 28px;
+      }
+
       @media (max-width: 768px) {
-        .page-title {
+        h1.page-title {
           font-size: 32px;
         }
 
         .section-title {
           font-size: 24px;
+        }
+
+        .featured-title,
+        .work-title {
+          font-size: 28px;
         }
       }
     </style>
@@ -437,12 +690,13 @@
     </header>
 
     <main class="page-wrapper">
-      <!-- H1 только один -->
+      <!-- H1 -->
       <h1 class="page-title">Portfolio</h1>
       <p class="page-subtitle">
         Commercials, music videos, food &amp; product and branded content shot
         and edited for brands, agencies and artists across Serbia, Dubai and
-        Europe.
+        Europe. For in-depth process notes, visit the
+        <a href="blog.html">Blog &amp; News</a> page.
       </p>
 
       <!-- Services -->
@@ -477,7 +731,7 @@
         </div>
       </section>
 
-      <!-- Shooting directions -->
+      <!-- Shooting focus -->
       <section id="directions" class="section">
         <div class="section-header">
           <h2 class="section-title">Shooting Focus</h2>
@@ -560,6 +814,579 @@
               Europe. Comfortable working with local and remote teams, small
               agile crews or full productions.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Selected Work -->
+      <section id="selected-work" class="featured-section">
+        <div class="featured-container">
+          <div class="featured-header">
+            <h2 class="featured-title">Selected Work</h2>
+            <p class="featured-subtitle">
+              A snapshot of key projects across commercials, music videos and
+              branded content.
+            </p>
+          </div>
+          <div class="featured-grid">
+            <!-- Able -->
+            <a
+              href="https://youtu.be/8fKJ1K_5ork"
+              class="featured-item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://scontent.fbeg2-1.fna.fbcdn.net/v/t39.30808-6/577557802_778925208511887_7636873670738917397_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=cZdIkcPDKNsQ7kNvwGRDh72&_nc_oc=AdnTCX7wClKo5OpDOEIUin0MjIiWW1da_y5fsjN2PQAKTHnEbVW7f5HhmPxToANIUDo&_nc_zt=23&_nc_ht=scontent.fbeg2-1.fna&_nc_gid=SN7anV6MVx8FaTCPCyox9g&oh=00_AfiSHNlpeW_4VLnArFi5iyNZVmz8Mxq_ZyloX_pRXUs2zQ&oe=692F6742"
+                alt="Able commercial – director of photography & director Sam Kras"
+                class="featured-image"
+              />
+              <div class="featured-info">
+                <h3 class="featured-name">Able</h3>
+                <p class="featured-role">
+                  Director of Photography · Director
+                </p>
+              </div>
+            </a>
+
+            <!-- Webium -->
+            <a
+              href="https://youtu.be/yjb0rXSOx-Y?si=0AL2rV7dAOYlpX6F"
+              class="featured-item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://i.ytimg.com/vi/yjb0rXSOx-Y/maxresdefault.jpg"
+                alt="Webium commercial – cinematography by Sam Kras"
+                class="featured-image"
+              />
+              <div class="featured-info">
+                <h3 class="featured-name">Webium</h3>
+                <p class="featured-role">Director of Photography</p>
+              </div>
+            </a>
+
+            <!-- OuiVerb -->
+            <a
+              href="https://youtu.be/IE_FcqJMRrk?si=-vYjpfBbulJ9O2KH"
+              class="featured-item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://scontent.fbeg1-1.fna.fbcdn.net/v/t39.30808-6/559074137_754693454268396_6662991684776403842_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=zmGRg2uIxV8Q7kNvwEelnEs&_nc_oc=AdnlKukvwTkjNjMaFW7B92d2XPIQQBwrDzJDqGWxbQ8UeabLUn8H6RVVH96JjVwtM0k&_nc_zt=23&_nc_ht=scontent.fbeg1-1.fna&_nc_gid=ECjPJc7JWEQNMlMPiyZmow&oh=00_Afgnt_L5BkRvSveoe1Wettm47RZaQ0aGcWAxm4YAKyqqew&oe=692F7894"
+                alt="OuiVerb commercial – DP, director and concept by Sam Kras"
+                class="featured-image"
+              />
+              <div class="featured-info">
+                <h3 class="featured-name">OuiVerb</h3>
+                <p class="featured-role">DP · Director · Concept</p>
+              </div>
+            </a>
+
+            <!-- Digital Anarchy -->
+            <a
+              href="https://youtu.be/5gxw2sool5c"
+              class="featured-item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://scontent.fbeg1-1.fna.fbcdn.net/v/t39.30808-6/482215671_585282684542808_6082995671977878446_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=YnNp368DscAQ7kNvwEH7a8H&_nc_oc=Adn5Sk9JCpM-J2BdPjww8blMCD8hPB_bfHgm9SHcE9AhRPD0V7dJjoBIw9HblCRYZbk&_nc_zt=23&_nc_ht=scontent.fbeg1-1.fna&_nc_gid=dSE9BxTkUlZdpjrvQmkwNg&oh=00_AfhxI_Sew6ujWn3VscqgOgteH8-Z4fsvpadhh1C-MpxnQA&oe=692F682F"
+                alt="Digital Anarchy product video – cinematography by Sam Kras"
+                class="featured-image"
+              />
+              <div class="featured-info">
+                <h3 class="featured-name">Digital Anarchy</h3>
+                <p class="featured-role">DP</p>
+              </div>
+            </a>
+
+            <!-- SAM PIKAR -->
+            <a
+              href="https://youtu.be/yWkzTUF6fyY?si=QnSHmSi2CTozx21W"
+              class="featured-item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://i.ytimg.com/vi/yWkzTUF6fyY/maxresdefault.jpg"
+                alt="SAM PIKAR - Dancing Alone music video – director of photography Sam Kras"
+                class="featured-image"
+              />
+              <div class="featured-info">
+                <h3 class="featured-name">
+                  SAM PIKAR - Dancing Alone (music video 2024)
+                </h3>
+                <p class="featured-role">Director of Photography</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ALL PROJECTS CAROUSEL -->
+      <section id="all-projects" class="carousel-section">
+        <div class="carousel-header">
+          <h2 class="carousel-title">All Projects</h2>
+          <p class="carousel-subtitle">
+            Scroll horizontally to explore more work.
+          </p>
+        </div>
+        <div class="carousel-wrapper">
+          <div class="carousel-track">
+            <a
+              href="https://youtu.be/8fKJ1K_5ork"
+              class="carousel-item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://scontent.fbeg2-1.fna.fbcdn.net/v/t39.30808-6/577557802_778925208511887_7636873670738917397_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=cZdIkcPDKNsQ7kNvwGRDh72&_nc_oc=AdnTCX7wClKo5OpDOEIUin0MjIiWW1da_y5fsjN2PQAKTHnEbVW7f5HhmPxToANIUDo&_nc_zt=23&_nc_ht=scontent.fbeg2-1.fna&_nc_gid=SN7anV6MVx8FaTCPCyox9g&oh=00_AfiSHNlpeW_4VLnArFi5iyNZVmz8Mxq_ZyloX_pRXUs2zQ&oe=692F6742"
+                alt="Able commercial – director of photography & director Sam Kras"
+                class="carousel-image"
+              />
+              <div class="carousel-label">Able</div>
+            </a>
+
+            <a
+              href="https://youtu.be/yjb0rXSOx-Y?si=0AL2rV7dAOYlpX6F"
+              class="carousel-item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://i.ytimg.com/vi/yjb0rXSOx-Y/maxresdefault.jpg"
+                alt="Webium commercial – cinematography by Sam Kras"
+                class="carousel-image"
+              />
+              <div class="carousel-label">Webium</div>
+            </a>
+
+            <a
+              href="https://youtu.be/IE_FcqJMRrk?si=-vYjpfBbulJ9O2KH"
+              class="carousel-item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://scontent.fbeg1-1.fna.fbcdn.net/v/t39.30808-6/559074137_754693454268396_6662991684776403842_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=zmGRg2uIxV8Q7kNvwEelnEs&_nc_oc=AdnlKukvwTkjNjMaFW7B92d2XPIQQBwrDzJDqGWxbQ8UeabLUn8H6RVVH96JjVwtM0k&_nc_zt=23&_nc_ht=scontent.fbeg1-1.fna&_nc_gid=ECjPJc7JWEQNMlMPiyZmow&oh=00_Afgnt_L5BkRvSveoe1Wettm47RZaQ0aGcWAxm4YAKyqqew&oe=692F7894"
+                alt="OuiVerb commercial – DP, director and concept by Sam Kras"
+                class="carousel-image"
+              />
+              <div class="carousel-label">OuiVerb</div>
+            </a>
+
+            <a
+              href="https://youtu.be/5gxw2sool5c"
+              class="carousel-item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://github.com/SamKras/dp-portfolio/blob/main/482215671_585282684542808_6082995671977878446_n.jpg?raw=true"
+                alt="Digital Anarchy product video – cinematography by Sam Kras"
+                class="carousel-image"
+              />
+              <div class="carousel-label">Digital Anarchy</div>
+            </a>
+
+            <a
+              href="https://youtu.be/yWkzTUF6fyY?si=QnSHmSi2CTozx21W"
+              class="carousel-item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://i.ytimg.com/vi/yWkzTUF6fyY/maxresdefault.jpg"
+                alt="SAM PIKAR - Dancing Alone music video – director of photography Sam Kras"
+                class="carousel-image"
+              />
+              <div class="carousel-label">SAM PIKAR - Dancing Alone</div>
+            </a>
+
+            <a
+              href="https://youtu.be/wDLqWjxa50A?si=ZaSrHjigZVgGRL-R"
+              class="carousel-item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://i.ytimg.com/vi/wDLqWjxa50A/maxresdefault.jpg"
+                alt="THE MAYA SECRET | Dawn music video – cinematography by Sam Kras"
+                class="carousel-image"
+              />
+              <div class="carousel-label">
+                THE MAYA SECRET | Dawn (Official Video)
+              </div>
+            </a>
+
+            <a
+              href="https://youtu.be/AvfhbgXZVdA?si=oXO5WapuRwkAByFK"
+              class="carousel-item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://i.ytimg.com/vi/AvfhbgXZVdA/maxresdefault.jpg"
+                alt="Yoga teacher promo video – director of photography Sam Kras"
+                class="carousel-image"
+              />
+              <div class="carousel-label">Yoga teacher promo</div>
+            </a>
+
+            <a
+              href="https://youtu.be/EnclP_Ol4TM?si=1T5M7wQi3eKE2fCt"
+              class="carousel-item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://i.ytimg.com/vi/EnclP_Ol4TM/maxresdefault.jpg"
+                alt="DJ-set by Sveta Rain in the OAZIS – live video by Sam Kras"
+                class="carousel-image"
+              />
+              <div class="carousel-label">
+                DJ-set by Sveta Rain in the OAZIS
+              </div>
+            </a>
+
+            <a
+              href="https://youtu.be/CAuBqWmZPQI?si=tv9tZgdNYMMVqUUr"
+              class="carousel-item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://i.ytimg.com/vi/CAuBqWmZPQI/maxresdefault.jpg"
+                alt="Vertebra for OnlyLyag fashion film – cinematography by Sam Kras"
+                class="carousel-image"
+              />
+              <div class="carousel-label">Vertebra for OnlyLyag</div>
+            </a>
+
+            <a
+              href="https://youtu.be/3ph8M1GX5uY?si=zyMZAlO-6lWvf6-o"
+              class="carousel-item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://i.ytimg.com/vi/3ph8M1GX5uY/maxresdefault.jpg"
+                alt="LenaItaly artist promo video – directed and shot by Sam Kras"
+                class="carousel-image"
+              />
+              <div class="carousel-label">LenaItaly artist</div>
+            </a>
+
+            <a
+              href="https://youtu.be/j7dI6yjS4Ho"
+              class="carousel-item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://i.ytimg.com/vi/j7dI6yjS4Ho/maxresdefault.jpg"
+                alt="Beyond Kitchen food commercial – cinematography by Sam Kras"
+                class="carousel-image"
+              />
+              <div class="carousel-label">Beyond Kitchen</div>
+            </a>
+
+            <a
+              href="https://youtu.be/iRKQkaB4SE4"
+              class="carousel-item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://i.ytimg.com/vi/iRKQkaB4SE4/hqdefault.jpg"
+                alt="San Jose dance school promo – directed and shot by Sam Kras"
+                class="carousel-image"
+              />
+              <div class="carousel-label">San Jose dance school promo</div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Documentary Work -->
+      <section id="documentary" class="work-section">
+        <div class="work-wrapper">
+          <div class="work-header">
+            <h2 class="work-title">Documentary Work</h2>
+            <p class="work-description">
+              Authentic stories captured with respect and intention.
+            </p>
+          </div>
+          <div class="work-grid">
+            <a
+              href="https://www.romaverafilms.com/projects/trevor-and-paige"
+              class="work-item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://scontent.fbeg1-1.fna.fbcdn.net/v/t39.30808-6/591155856_794841566920251_6733428081677514555_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=H7TeZUldZH8Q7kNvwEPSff8&_nc_oc=AdnMfdKknxqDD2LqtiGhoJqCf3X7YPyrwu6zpS2kSre3A496aGxwF_AIY2w-t3KLrSc&_nc_zt=23&_nc_ht=scontent.fbeg1-1.fna&_nc_gid=wXLZHVbWFGU8cvbe2TYKKg&oh=00_Afg6IkXd_JB2uvbZt_JKGQmZpXBRg6VtK57PMO7CgG3Ypw&oe=692F5FCE"
+                alt="RomaVera Weddings documentary – wedding cinematography by Sam Kras"
+                class="work-cover zoom"
+              />
+              <div class="work-details">
+                <h3 class="work-item-title">RomaVera Weddings</h3>
+                <p class="work-role">Documentary Cinematographer</p>
+              </div>
+            </a>
+
+            <a
+              href="https://youtu.be/3WjNXGLG2tc"
+              class="work-item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://i.ytimg.com/vi/3WjNXGLG2tc/maxresdefault.jpg"
+                alt="David &amp; Heidi | San Francisco Wedding Video – documentary by Sam Kras"
+                class="work-cover"
+              />
+              <div class="work-details">
+                <h3 class="work-item-title">
+                  David &amp; Heidi | San Francisco Wedding Video
+                </h3>
+                <p class="work-role">Cinematographer</p>
+              </div>
+            </a>
+
+            <a
+              href="https://vimeo.com/917596503?fl=pl&fe=sh"
+              class="work-item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://scontent.fbeg1-1.fna.fbcdn.net/v/t39.30808-6/469071359_516158794788531_7354893043694852148_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=MSbg8GPp0TMQ7kNvwHMIi1o&_nc_oc=AdnKKul2tsfKX-GqykUqfqwUqB6r18uHdHXCL8E2jGxDQG0ONHGhXTpLxW_hGd8lUgQ&_nc_zt=23&_nc_ht=scontent.fbeg1-1.fna&_nc_gid=Y5Stx_3YKrCD5mvdfOSK3Q&oh=00_AfjEqJK-0ts6d1AfE9dfVP4XnGhXaPertLD_2vcyEtREQw&oe=692F8DB8"
+                alt="Food Summit documentary – event cinematography by Sam Kras"
+                class="work-cover"
+              />
+              <div class="work-details">
+                <h3 class="work-item-title">Food Summit</h3>
+                <p class="work-role">Cinematographer</p>
+              </div>
+            </a>
+
+            <a
+              href="https://www.facebook.com/semyon.krasilnikov.2025/videos/3166986323605184/"
+              class="work-item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://i.ytimg.com/vi/_94sYhLpvYE/maxresdefault.jpg"
+                alt="San Francisco Innovation Hub documentary – corporate film by Sam Kras"
+                class="work-cover"
+              />
+              <div class="work-details">
+                <h3 class="work-item-title">
+                  San Francisco Innovation Hub
+                </h3>
+                <p class="work-role">Docu Corporate Cinematography</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Selected Edits -->
+      <section id="edits" class="work-section">
+        <div class="work-wrapper">
+          <div class="work-header">
+            <h2 class="work-title">Selected Edits</h2>
+            <p class="work-description">
+              Edits built around rhythm, emotion and clean structure.
+            </p>
+          </div>
+          <div
+            class="work-grid"
+            style="
+              grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+              max-width: 1200px;
+              margin: 0 auto;
+            "
+          >
+            <a
+              href="https://youtube.com/shorts/gObhtyabLVk"
+              class="work-item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://i.ytimg.com/vi/gObhtyabLVk/maxresdefault.jpg"
+                alt="Food-truck commercial edit – cut by Sam Kras"
+                class="work-cover"
+              />
+              <div class="work-details">
+                <h3 class="work-item-title">Food-truck commercial</h3>
+                <p class="work-role">Editor</p>
+              </div>
+            </a>
+
+            <a
+              href="https://youtu.be/IE_FcqJMRrk?si=-vYjpfBbulJ9O2KH"
+              class="work-item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://scontent.fbeg1-1.fna.fbcdn.net/v/t39.30808-6/559074137_754693454268396_6662991684776403842_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=zmGRg2uIxV8Q7kNvwEelnEs&_nc_oc=AdnlKukvwTkjNjMaFW7B92d2XPIQQBwrDzJDqGWxbQ8UeabLUn8H6RVVH96JjVwtM0k&_nc_zt=23&_nc_ht=scontent.fbeg1-1.fna&_nc_gid=ECjPJc7JWEQNMlMPiyZmow&oh=00_Afgnt_L5BkRvSveoe1Wettm47RZaQ0aGcWAxm4YAKyqqew&oe=692F7894"
+                alt="OuiVerb commercial edit – edited by Sam Kras"
+                class="work-cover"
+              />
+              <div class="work-details">
+                <h3 class="work-item-title">OuiVerb</h3>
+                <p class="work-role">Editor</p>
+              </div>
+            </a>
+
+            <a
+              href="https://www.instagram.com/food_rockmood?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              class="work-item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://scontent.fbeg2-1.fna.fbcdn.net/v/t39.30808-6/574403180_771033465967728_256272890067847209_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=tTNvfsSA7gUQ7kNvwGWtJXF&_nc_oc=AdnKyBs4P0pvVgiHBjEHWuQ0w4SPJDgc-6cS6vOpsn6k8bv6oSXW7YExD01cr4uiA9o&_nc_zt=23&_nc_ht=scontent.fbeg2-1.fna&_nc_gid=qAPJfAXTPFB-NK8CAE4Esw&oh=00_Afg4ckSEuhrpc2rCgvqXl-kyUMh0LPgcAFjNcR_zL8m6bg&oe=692F6918"
+                alt="FoodRockMood food content – edited by Sam Kras"
+                class="work-cover"
+              />
+              <div class="work-details">
+                <h3 class="work-item-title">FoodRockMood</h3>
+                <p class="work-role">Editor</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Editing philosophy -->
+      <section class="philosophy-section">
+        <div class="philosophy-container">
+          <h2>Editing Philosophy</h2>
+          <p class="philosophy-quote">
+            I build edits around emotion and rhythm. Cutting is not just
+            assembling — it's choreography. I focus on flow, invisible
+            transitions, and strong internal pacing.
+          </p>
+        </div>
+      </section>
+
+      <!-- Interviews & Podcasts -->
+      <section id="interviews" class="work-section">
+        <div class="work-wrapper">
+          <div class="work-header">
+            <h2 class="work-title">Interviews &amp; Podcasts</h2>
+            <p class="work-description">
+              Long-form conversations shot and edited for tech and creator
+              brands.
+            </p>
+          </div>
+          <div class="interview-grid">
+            <a
+              href="https://youtu.be/c8p9RL6z9QM?si=WOYmIxGPdz3PZYB7"
+              class="work-item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://i.ytimg.com/vi/c8p9RL6z9QM/maxresdefault.jpg"
+                alt="Interview Inside CopilotKit with Atai Barkai – DP & editor Sam Kras"
+                class="work-cover"
+              />
+              <div class="work-details">
+                <h3 class="work-item-title">
+                  Interview Inside CopilotKit with Atai Barkai
+                </h3>
+                <p class="work-role">DP · Editor</p>
+              </div>
+            </a>
+
+            <a
+              href="https://youtu.be/6ldCrrc6Y5U?si=IreCNKOJLOh_2F5u"
+              class="work-item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://i.ytimg.com/vi/6ldCrrc6Y5U/maxresdefault.jpg"
+                alt="Interview on burnout and scaling HealthTech with Paul Gilbert – DP & editor Sam Kras"
+                class="work-cover"
+              />
+              <div class="work-details">
+                <h3 class="work-item-title">
+                  Interview Burnout and Breakthrough in Scaling HealthTech with
+                  Paul Gilbert
+                </h3>
+                <p class="work-role">DP · Editor</p>
+              </div>
+            </a>
+
+            <a
+              href="https://youtu.be/A1DJdMRNS-w?si=1TSTW7JlyFggARQn"
+              class="work-item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://i.ytimg.com/vi/A1DJdMRNS-w/maxresdefault.jpg"
+                alt="Podcast San Francisco Innovation Hub – video by Sam Kras"
+                class="work-cover"
+              />
+              <div class="work-details">
+                <h3 class="work-item-title">
+                  Podcast San Francisco Innovation Hub
+                </h3>
+                <p class="work-role">DP · Editor</p>
+              </div>
+            </a>
+
+            <a
+              href="https://youtu.be/Q66gsBJnKKQ?si=lNiVyiBPgStgsUeb"
+              class="work-item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://i.ytimg.com/vi/Q66gsBJnKKQ/maxresdefault.jpg"
+                alt="Anthropic CPO: How AI Will Build the Next $100M Companies | Mike Krieger – DP & editor Sam Kras"
+                class="work-cover"
+              />
+              <div class="work-details">
+                <h3 class="work-item-title">
+                  Anthropic CPO: How AI Will Build the Next $100M Companies |
+                  Mike Krieger
+                </h3>
+                <p class="work-role">DP · Editor</p>
+              </div>
+            </a>
+
+            <a
+              href="https://youtu.be/abG3YfHDb5w?si=WgSM6-UfeoH8oYdB"
+              class="work-item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://i.ytimg.com/vi/abG3YfHDb5w/maxresdefault.jpg"
+                alt="I Asked YouTube's CEO Your Hardest Questions – DP & editor Sam Kras"
+                class="work-cover"
+              />
+              <div class="work-details">
+                <h3 class="work-item-title">
+                  I Asked YouTube's CEO Your Hardest Questions (feat MrBeast,
+                  Logan Paul &amp; Cleo Abram)
+                </h3>
+                <p class="work-role">DP · Editor</p>
+              </div>
+            </a>
           </div>
         </div>
       </section>
@@ -655,3 +1482,4 @@
     </main>
   </body>
 </html>
+
