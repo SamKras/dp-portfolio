@@ -8,16 +8,16 @@
     />
 
     <!-- SEO -->
-    <title>Blog &amp; News – Sam Kras | Cinematography & Editing Notes</title>
+    <title>Blog &amp; News – Sam Krasilnikov | Cinematography & Editing Notes</title>
 
     <meta
       name="description"
-      content="Blog and news from Director of Photography & video editor Sam Kras. Case studies, behind the scenes and notes on cinematography, editing and production in Serbia, Dubai and Europe."
+      content="Blog and news from Director of Photography & video editor Sam Krasilnikov. Case studies, behind the scenes and notes on cinematography, editing and production in Serbia, Dubai and Europe."
     />
 
     <meta
       name="keywords"
-      content="cinematography blog, dop blog, camera work tips, video editing tips, commercial cinematography, food cinematography, documentary filmmaking, Serbia, Dubai, Europe"
+      content="sam krasilnikov, cinematography blog, dop blog, camera work tips, video editing tips, commercial cinematography, food cinematography, documentary filmmaking, Serbia, Dubai, Europe"
     />
 
     <link
@@ -28,11 +28,11 @@
     <!-- OPEN GRAPH -->
     <meta
       property="og:title"
-      content="Blog & News – Sam Kras | Cinematography & Editing Notes"
+      content="Blog & News – Sam Krasilnikov | Cinematography & Editing Notes"
     />
     <meta
       property="og:description"
-      content="Case studies, behind the scenes and notes on cinematography, editing and commercial production by Director of Photography & video editor Sam Kras."
+      content="Case studies, behind the scenes and notes on cinematography, editing and commercial production by Director of Photography & video editor Sam Krasilnikov."
     />
     <meta
       property="og:image"
@@ -50,36 +50,36 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="Blog & News – Sam Kras | Cinematography & Editing Notes"
+      content="Blog & News – Sam Krasilnikov | Cinematography & Editing Notes"
     />
     <meta
       name="twitter:description"
-      content="Blog and news from Director of Photography & video editor Sam Kras – cinematography and editing insights from projects in Serbia, Dubai and Europe."
+      content="Blog and news from Director of Photography & video editor Sam Krasilnikov – cinematography and editing insights from projects in Serbia, Dubai and Europe."
     />
     <meta
       name="twitter:image"
       content="https://github.com/SamKras/dp-portfolio/blob/main/Untitled00086404.jpg?raw=true"
     />
 
-    <!-- STRUCTURED DATA (Person можно дублировать здесь или опустить) -->
+    <!-- STRUCTURED DATA (Blog) -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Blog",
         "@id": "https://samkras.github.io/dp-portfolio/blog.html#blog",
-        "name": "Blog & News – Sam Kras",
+        "name": "Blog & News – Sam Krasilnikov",
         "url": "https://samkras.github.io/dp-portfolio/blog.html",
-        "description": "Cinematography and editing notes from Director of Photography & video editor Sam Kras.",
+        "description": "Cinematography and editing notes from Director of Photography & video editor Sam Krasilnikov.",
         "inLanguage": "en",
         "publisher": {
           "@type": "Person",
-          "name": "Sam Kras",
+          "name": "Sam Krasilnikov",
           "url": "https://samkras.github.io/dp-portfolio/"
         }
       }
     </script>
 
-    <!-- GA (как в index) -->
+    <!-- GA -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-98GWYJHHSN"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -120,7 +120,7 @@
         overflow-x: hidden;
       }
 
-      /* NAV – такой же, как на index/portfolio */
+      /* NAV */
       .main-header {
         position: fixed;
         top: 0;
@@ -183,7 +183,7 @@
       .page-wrapper {
         max-width: 960px;
         margin: 0 auto;
-        padding: 100px 20px 60px; /* 100px под фиксированную шапку */
+        padding: 100px 20px 60px;
       }
 
       h1.page-title {
@@ -227,6 +227,7 @@
       .post-excerpt {
         font-size: 16px;
         color: var(--text-secondary);
+        white-space: pre-line;
       }
 
       .post-excerpt a {
@@ -267,7 +268,7 @@
     <!-- NAV -->
     <header class="main-header">
       <div class="nav-container">
-        <div class="nav-logo">SAM KRAS</div>
+        <div class="nav-logo">SAM KRASILNIKOV</div>
         <nav class="nav-links">
           <a href="index.html">Home</a>
           <a href="portfolio.html">Portfolio</a>
@@ -278,7 +279,6 @@
     </header>
 
     <main class="page-wrapper">
-      <!-- Один h1 -->
       <h1 class="page-title">Blog &amp; News</h1>
       <p class="page-subtitle">
         Notes on cinematography, editing and recent projects. For visual
@@ -287,6 +287,37 @@
       </p>
 
       <section class="posts-list">
+        <!-- NEW POST: GyroFlow / Sony -->
+        <article class="post-card">
+          <h2 class="post-title">
+            Gyro-based stabilization for Sony &amp; DaVinci Resolve
+          </h2>
+          <div class="post-meta">Tools · Sony FX6 · DaVinci Resolve</div>
+          <p class="post-excerpt">
+Hi everyone,
+I’ve seen a lot of people mention issues with Sony’s stabilization, so I wanted to share something that might help.
+
+Some of you probably remember GyroFlow. It used to be a separate program for stabilizing GoPro and some Sony footage, but the problem was that you had to use it outside your main editing workflow.
+
+DaVinci Resolve later added gyro-based stabilization for Blackmagic cameras. I used it a lot when I had the BMPCC 6K, and it worked extremely well.
+
+Recently I needed to stabilize handheld footage from a Sony FX6. I didn’t have a gimbal on that project, but the client asked for smoother shots in post. I found out that in 2024 GyroFlow released an official plugin for DaVinci Resolve. It lets you stabilize using gyro data from almost any camera directly inside the editor. No external tools, no extra steps. It works great.
+
+Plugin link: https://lnkd.in/dyuV4MiZ
+
+It also stabilizes regular footage without gyro data, but if your camera records gyros, the result is noticeably better.
+
+Small tip for Sony users:
+If you turn off all in-camera stabilization, the gyro-based stabilization works even better. I’ll do a test with the FX6 and an old non-stabilized prime lens soon. If you want to see it, send me a message.
+
+The plugin is available for Windows and macOS. They also have versions for Premiere, After Effects, and Final Cut Pro.
+All downloads are here: https://lnkd.in/dhz73Z8x
+
+Hope this helps someone
+          </p>
+        </article>
+
+        <!-- Existing posts -->
         <article class="post-card">
           <h2 class="post-title">
             Shooting food commercials: light, texture and motion
@@ -345,5 +376,6 @@
     </main>
   </body>
 </html>
+
 
 
