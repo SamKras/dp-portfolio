@@ -13,25 +13,35 @@
       content="0gpyoPMXFDAEDswh6mqEQzBx6UcmJWvPXblVJFGJ4pY"
     />
 
-    <!-- SEO: заголовок -->
+    <!-- PRIMARY SEO -->
     <title>
-      Sam Krasilnikov – Director of Photography & Video Editor | Serbia, Dubai & Europe
+      Sam Kras – Director of Photography & Video Editor | Commercials, Music Videos, Branded Content
     </title>
 
-    <!-- SEO: описание (без Амстердама) -->
     <meta
       name="description"
-      content="Director of Photography and video editor for commercials, music videos and branded content. Based in Belgrade, available for shoots in Serbia, Dubai and across Europe."
+      content="International Director of Photography and video editor specialising in commercials, music videos, food & product and branded content. Based in Belgrade, available for shoots in Serbia, Dubai and across Europe."
     />
 
-    <!-- Open Graph / Social preview (без Амстердама) -->
+    <meta
+      name="keywords"
+      content="director of photography, cinematographer, dop, videographer, video editor, commercial cinematography, food cinematography, product cinematography, branded content, music video dp, Serbia, Belgrade, Dubai, Europe"
+    />
+
+    <!-- CANONICAL -->
+    <link
+      rel="canonical"
+      href="https://samkras.github.io/dp-portfolio/"
+    />
+
+    <!-- OPEN GRAPH / SOCIAL preview -->
     <meta
       property="og:title"
       content="Sam Kras – Director of Photography & Video Editor"
     />
     <meta
       property="og:description"
-      content="Commercials, music videos and branded content. Based in Belgrade, available in Serbia, Dubai and across Europe."
+      content="Commercials, music videos, food & product and branded content. Director of Photography & video editor based in Belgrade, working in Serbia, Dubai and across Europe."
     />
     <meta
       property="og:image"
@@ -45,8 +55,49 @@
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
-    <!-- GOOGLE ANALYTICS (GA4) — твой реальный тег -->
-    <!-- Google tag (gtag.js) -->
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Sam Kras – Director of Photography & Video Editor"
+    />
+    <meta
+      name="twitter:description"
+      content="International Director of Photography and video editor for commercials, music videos, food & product and branded content. Based in Belgrade, available in Serbia, Dubai and across Europe."
+    />
+    <meta
+      name="twitter:image"
+      content="https://github.com/SamKras/dp-portfolio/blob/main/Untitled00086404.jpg?raw=true"
+    />
+
+    <!-- STRUCTURED DATA (Person) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://samkras.github.io/dp-portfolio/#person",
+        "name": "Sam Kras",
+        "jobTitle": "Director of Photography & Video Editor",
+        "description": "International Director of Photography and video editor specialising in commercials, music videos, food & product and branded content.",
+        "url": "https://samkras.github.io/dp-portfolio/",
+        "image": "https://github.com/SamKras/dp-portfolio/blob/main/Untitled00086404.jpg?raw=true",
+        "sameAs": [
+          "https://instagram.com/vazivskyfilm"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Belgrade",
+          "addressCountry": "RS"
+        },
+        "areaServed": [
+          "Serbia",
+          "Dubai",
+          "Europe"
+        ]
+      }
+    </script>
+
+    <!-- GOOGLE ANALYTICS (GA4) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-98GWYJHHSN"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -54,7 +105,6 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-98GWYJHHSN");
     </script>
 
@@ -88,7 +138,7 @@
         overflow-x: hidden;
       }
 
-      /* ====== ДОБАВЛЕНО: НАВИГАЦИЯ (МЕНЮ) ====== */
+      /* NAVIGATION (HEADER) */
 
       .main-header {
         position: fixed;
@@ -149,8 +199,6 @@
         }
       }
 
-      /* ====== КОНЕЦ: МЕНЮ ====== */
-
       /* HERO */
 
       .hero-dp {
@@ -163,9 +211,8 @@
         flex-direction: column;
         text-align: center;
         padding: 40px 20px;
+        padding-top: 100px; /* отступ под фиксированное меню */
         overflow: hidden;
-        /* ДОБАВЛЕНО: отступ сверху, чтобы не залезать под фикс-меню */
-        padding-top: 100px;
       }
 
       .hero-video {
@@ -256,8 +303,8 @@
         text-decoration: none;
         font-weight: 500;
         font-size: 15px;
-        transition: all 0.4s ease;
         border-radius: 2px;
+        transition: all 0.4s ease;
       }
 
       .btn-primary:hover {
@@ -272,9 +319,9 @@
         text-decoration: none;
         font-weight: 500;
         font-size: 15px;
-        transition: all 0.4s ease;
         border-radius: 2px;
         background: rgba(42, 42, 42, 0.5);
+        transition: all 0.4s ease;
       }
 
       .btn-secondary:hover {
@@ -982,12 +1029,13 @@
     </style>
   </head>
   <body>
-    <!-- ДОБАВЛЕННОЕ МЕНЮ -->
+    <!-- HEADER / NAVIGATION -->
     <header class="main-header">
       <div class="nav-container">
         <div class="nav-logo">SAM KRAS</div>
         <nav class="nav-links">
           <a href="index.html">Home</a>
+          <a href="portfolio.html">Portfolio</a>
           <a href="blog.html">Blog &amp; News</a>
           <a href="#contact">Contacts</a>
         </nav>
@@ -1075,7 +1123,7 @@
           >
             <img
               src="https://scontent.fbeg2-1.fna.fbcdn.net/v/t39.30808-6/577557802_778925208511887_7636873670738917397_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=cZdIkcPDKNsQ7kNvwGRDh72&_nc_oc=AdnTCX7wClKo5OpDOEIUin0MjIiWW1da_y5fsjN2PQAKTHnEbVW7f5HhmPxToANIUDo&_nc_zt=23&_nc_ht=scontent.fbeg2-1.fna&_nc_gid=SN7anV6MVx8FaTCPCyox9g&oh=00_AfiSHNlpeW_4VLnArFi5iyNZVmz8Mxq_ZyloX_pRXUs2zQ&oe=692F6742"
-              alt="Able"
+              alt="Able commercial – director of photography & director Sam Kras"
               class="featured-image"
             />
             <div class="featured-info">
@@ -1093,7 +1141,7 @@
           >
             <img
               src="https://i.ytimg.com/vi/yjb0rXSOx-Y/maxresdefault.jpg"
-              alt="Webium"
+              alt="Webium commercial – cinematography by Sam Kras"
               class="featured-image"
             />
             <div class="featured-info">
@@ -1111,7 +1159,7 @@
           >
             <img
               src="https://scontent.fbeg1-1.fna.fbcdn.net/v/t39.30808-6/559074137_754693454268396_6662991684776403842_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=zmGRg2uIxV8Q7kNvwEelnEs&_nc_oc=AdnlKukvwTkjNjMaFW7B92d2XPIQQBwrDzJDqGWxbQ8UeabLUn8H6RVVH96JjVwtM0k&_nc_zt=23&_nc_ht=scontent.fbeg1-1.fna&_nc_gid=ECjPJc7JWEQNMlMPiyZmow&oh=00_Afgnt_L5BkRvSveoe1Wettm47RZaQ0aGcWAxm4YAKyqqew&oe=692F7894"
-              alt="OuiVerb"
+              alt="OuiVerb commercial – DP, director and concept by Sam Kras"
               class="featured-image"
             />
             <div class="featured-info">
@@ -1129,7 +1177,7 @@
           >
             <img
               src="https://scontent.fbeg1-1.fna.fbcdn.net/v/t39.30808-6/482215671_585282684542808_6082995671977878446_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=YnNp368DscAQ7kNvwEH7a8H&_nc_oc=Adn5Sk9JCpM-J2BdPjww8blMCD8hPB_bfHgm9SHcE9AhRPD0V7dJjoBIw9HblCRYZbk&_nc_zt=23&_nc_ht=scontent.fbeg1-1.fna&_nc_gid=dSE9BxTkUlZdpjrvQmkwNg&oh=00_AfhxI_Sew6ujWn3VscqgOgteH8-Z4fsvpadhh1C-MpxnQA&oe=692F682F"
-              alt="Digital Anarchy"
+              alt="Digital Anarchy product video – cinematography by Sam Kras"
               class="featured-image"
             />
             <div class="featured-info">
@@ -1147,7 +1195,7 @@
           >
             <img
               src="https://i.ytimg.com/vi/yWkzTUF6fyY/maxresdefault.jpg"
-              alt="SAM PIKAR - Dancing Alone (music video 2024)"
+              alt="SAM PIKAR - Dancing Alone music video – director of photography Sam Kras"
               class="featured-image"
             />
             <div class="featured-info">
@@ -1179,7 +1227,7 @@
           >
             <img
               src="https://scontent.fbeg2-1.fna.fbcdn.net/v/t39.30808-6/577557802_778925208511887_7636873670738917397_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=cZdIkcPDKNsQ7kNvwGRDh72&_nc_oc=AdnTCX7wClKo5OpDOEIUin0MjIiWW1da_y5fsjN2PQAKTHnEbVW7f5HhmPxToANIUDo&_nc_zt=23&_nc_ht=scontent.fbeg2-1.fna&_nc_gid=SN7anV6MVx8FaTCPCyox9g&oh=00_AfiSHNlpeW_4VLnArFi5iyNZVmz8Mxq_ZyloX_pRXUs2zQ&oe=692F6742"
-              alt="Able"
+              alt="Able commercial – director of photography & director Sam Kras"
               class="carousel-image"
             />
             <div class="carousel-label">Able</div>
@@ -1193,7 +1241,7 @@
           >
             <img
               src="https://i.ytimg.com/vi/yjb0rXSOx-Y/maxresdefault.jpg"
-              alt="Webium"
+              alt="Webium commercial – cinematography by Sam Kras"
               class="carousel-image"
             />
             <div class="carousel-label">Webium</div>
@@ -1207,7 +1255,7 @@
           >
             <img
               src="https://scontent.fbeg1-1.fna.fbcdn.net/v/t39.30808-6/559074137_754693454268396_6662991684776403842_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=zmGRg2uIxV8Q7kNvwEelnEs&_nc_oc=AdnlKukvwTkjNjMaFW7B92d2XPIQQBwrDzJDqGWxbQ8UeabLUn8H6RVVH96JjVwtM0k&_nc_zt=23&_nc_ht=scontent.fbeg1-1.fna&_nc_gid=ECjPJc7JWEQNMlMPiyZmow&oh=00_Afgnt_L5BkRvSveoe1Wettm47RZaQ0aGcWAxm4YAKyqqew&oe=692F7894"
-              alt="OuiVerb"
+              alt="OuiVerb commercial – DP, director and concept by Sam Kras"
               class="carousel-image"
             />
             <div class="carousel-label">OuiVerb</div>
@@ -1221,7 +1269,7 @@
           >
             <img
               src="https://github.com/SamKras/dp-portfolio/blob/main/482215671_585282684542808_6082995671977878446_n.jpg?raw=true"
-              alt="Digital Anarchy"
+              alt="Digital Anarchy product video – cinematography by Sam Kras"
               class="carousel-image"
             />
             <div class="carousel-label">Digital Anarchy</div>
@@ -1235,7 +1283,7 @@
           >
             <img
               src="https://i.ytimg.com/vi/yWkzTUF6fyY/maxresdefault.jpg"
-              alt="SAM PIKAR - Dancing Alone"
+              alt="SAM PIKAR - Dancing Alone music video – director of photography Sam Kras"
               class="carousel-image"
             />
             <div class="carousel-label">SAM PIKAR - Dancing Alone</div>
@@ -1249,7 +1297,7 @@
           >
             <img
               src="https://i.ytimg.com/vi/wDLqWjxa50A/maxresdefault.jpg"
-              alt="THE MAYA SECRET | Dawn"
+              alt="THE MAYA SECRET | Dawn music video – cinematography by Sam Kras"
               class="carousel-image"
             />
             <div class="carousel-label">
@@ -1265,7 +1313,7 @@
           >
             <img
               src="https://i.ytimg.com/vi/AvfhbgXZVdA/maxresdefault.jpg"
-              alt="Yoga teacher promo"
+              alt="Yoga teacher promo video – director of photography Sam Kras"
               class="carousel-image"
             />
             <div class="carousel-label">Yoga teacher promo</div>
@@ -1279,7 +1327,7 @@
           >
             <img
               src="https://i.ytimg.com/vi/EnclP_Ol4TM/maxresdefault.jpg"
-              alt="DJ-set by Sveta Rain in the OAZIS"
+              alt="DJ-set by Sveta Rain in the OAZIS – live video by Sam Kras"
               class="carousel-image"
             />
             <div class="carousel-label">DJ-set by Sveta Rain in the OAZIS</div>
@@ -1293,7 +1341,7 @@
           >
             <img
               src="https://i.ytimg.com/vi/CAuBqWmZPQI/maxresdefault.jpg"
-              alt="Vertebra for OnlyLyag"
+              alt="Vertebra for OnlyLyag fashion film – cinematography by Sam Kras"
               class="carousel-image"
             />
             <div class="carousel-label">Vertebra for OnlyLyag</div>
@@ -1307,7 +1355,7 @@
           >
             <img
               src="https://i.ytimg.com/vi/3ph8M1GX5uY/maxresdefault.jpg"
-              alt="LenaItaly artist"
+              alt="LenaItaly artist promo video – directed and shot by Sam Kras"
               class="carousel-image"
             />
             <div class="carousel-label">LenaItaly artist</div>
@@ -1321,7 +1369,7 @@
           >
             <img
               src="https://i.ytimg.com/vi/j7dI6yjS4Ho/maxresdefault.jpg"
-              alt="Beyond Kitchen"
+              alt="Beyond Kitchen food commercial – cinematography by Sam Kras"
               class="carousel-image"
             />
             <div class="carousel-label">Beyond Kitchen</div>
@@ -1335,7 +1383,7 @@
           >
             <img
               src="https://i.ytimg.com/vi/iRKQkaB4SE4/hqdefault.jpg"
-              alt="San Jose dance school promo"
+              alt="San Jose dance school promo – directed and shot by Sam Kras"
               class="carousel-image"
             />
             <div class="carousel-label">San Jose dance school promo</div>
@@ -1362,7 +1410,7 @@
           >
             <img
               src="https://scontent.fbeg1-1.fna.fbcdn.net/v/t39.30808-6/591155856_794841566920251_6733428081677514555_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=H7TeZUldZH8Q7kNvwEPSff8&_nc_oc=AdnMfdKknxqDD2LqtiGhoJqCf3X7YPyrwu6zpS2kSre3A496aGxwF_AIY2w-t3KLrSc&_nc_zt=23&_nc_ht=scontent.fbeg1-1.fna&_nc_gid=wXLZHVbWFGU8cvbe2TYKKg&oh=00_Afg6IkXd_JB2uvbZt_JKGQmZpXBRg6VtK57PMO7CgG3Ypw&oe=692F5FCE"
-              alt="RomaVera Weddings"
+              alt="RomaVera Weddings documentary – wedding cinematography by Sam Kras"
               class="work-cover zoom"
             />
             <div class="work-details">
@@ -1379,7 +1427,7 @@
           >
             <img
               src="https://i.ytimg.com/vi/3WjNXGLG2tc/maxresdefault.jpg"
-              alt="David & Heidi | San Francisco Wedding Video"
+              alt="David &amp; Heidi | San Francisco Wedding Video – documentary by Sam Kras"
               class="work-cover"
             />
             <div class="work-details">
@@ -1398,7 +1446,7 @@
           >
             <img
               src="https://scontent.fbeg1-1.fna.fbcdn.net/v/t39.30808-6/469071359_516158794788531_7354893043694852148_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=MSbg8GPp0TMQ7kNvwHMIi1o&_nc_oc=AdnKKul2tsfKX-GqykUqfqwUqB6r18uHdHXCL8E2jGxDQG0ONHGhXTpLxW_hGd8lUgQ&_nc_zt=23&_nc_ht=scontent.fbeg1-1.fna&_nc_gid=Y5Stx_3YKrCD5mvdfOSK3Q&oh=00_AfjEqJK-0ts6d1AfE9dfVP4XnGhXaPertLD_2vcyEtREQw&oe=692F8DB8"
-              alt="Food Summit"
+              alt="Food Summit documentary – event cinematography by Sam Kras"
               class="work-cover"
             />
             <div class="work-details">
@@ -1415,7 +1463,7 @@
           >
             <img
               src="https://i.ytimg.com/vi/_94sYhLpvYE/maxresdefault.jpg"
-              alt="San Francisco Innovation Hub"
+              alt="San Francisco Innovation Hub documentary – corporate film by Sam Kras"
               class="work-cover"
             />
             <div class="work-details">
@@ -1464,7 +1512,7 @@
           >
             <img
               src="https://i.ytimg.com/vi/gObhtyabLVk/maxresdefault.jpg"
-              alt="Food-truck commercial"
+              alt="Food-truck commercial edit – cut by Sam Kras"
               class="work-cover"
             />
             <div class="work-details">
@@ -1481,7 +1529,7 @@
           >
             <img
               src="https://scontent.fbeg1-1.fna.fbcdn.net/v/t39.30808-6/559074137_754693454268396_6662991684776403842_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=zmGRg2uIxV8Q7kNvwEelnEs&_nc_oc=AdnlKukvwTkjNjMaFW7B92d2XPIQQBwrDzJDqGWxbQ8UeabLUn8H6RVVH96JjVwtM0k&_nc_zt=23&_nc_ht=scontent.fbeg1-1.fna&_nc_gid=ECjPJc7JWEQNMlMPiyZmow&oh=00_Afgnt_L5BkRvSveoe1Wettm47RZaQ0aGcWAxm4YAKyqqew&oe=692F7894"
-              alt="OuiVerb"
+              alt="OuiVerb commercial edit – edited by Sam Kras"
               class="work-cover"
             />
             <div class="work-details">
@@ -1498,7 +1546,7 @@
           >
             <img
               src="https://scontent.fbeg2-1.fna.fbcdn.net/v/t39.30808-6/574403180_771033465967728_256272890067847209_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=tTNvfsSA7gUQ7kNvwGWtJXF&_nc_oc=AdnKyBs4P0pvVgiHBjEHWuQ0w4SPJDgc-6cS6vOpsn6k8bv6oSXW7YExD01cr4uiA9o&_nc_zt=23&_nc_ht=scontent.fbeg2-1.fna&_nc_gid=qAPJfAXTPFB-NK8CAE4Esw&oh=00_Afg4ckSEuhrpc2rCgvqXl-kyUMh0LPgcAFjNcR_zL8m6bg&oe=692F6918"
-              alt="FoodRockMood"
+              alt="FoodRockMood food content – edited by Sam Kras"
               class="work-cover"
             />
             <div class="work-details">
@@ -1540,7 +1588,7 @@
           >
             <img
               src="https://i.ytimg.com/vi/c8p9RL6z9QM/maxresdefault.jpg"
-              alt="Interview Inside CopilotKit with Atai Barkai"
+              alt="Interview Inside CopilotKit with Atai Barkai – DP & editor Sam Kras"
               class="work-cover"
             />
             <div class="work-details">
@@ -1559,7 +1607,7 @@
           >
             <img
               src="https://i.ytimg.com/vi/6ldCrrc6Y5U/maxresdefault.jpg"
-              alt="Interview Burnout and Breakthrough in Scaling HealthTech with Paul Gilbert"
+              alt="Interview on burnout and scaling HealthTech with Paul Gilbert – DP & editor Sam Kras"
               class="work-cover"
             />
             <div class="work-details">
@@ -1579,7 +1627,7 @@
           >
             <img
               src="https://i.ytimg.com/vi/A1DJdMRNS-w/maxresdefault.jpg"
-              alt="Podcast San Francisco Innovation Hub"
+              alt="Podcast San Francisco Innovation Hub – video by Sam Kras"
               class="work-cover"
             />
             <div class="work-details">
@@ -1598,7 +1646,7 @@
           >
             <img
               src="https://i.ytimg.com/vi/Q66gsBJnKKQ/maxresdefault.jpg"
-              alt="Anthropic CPO: How AI Will Build the Next $100M Companies | Mike Krieger"
+              alt="Anthropic CPO: How AI Will Build the Next $100M Companies | Mike Krieger – DP & editor Sam Kras"
               class="work-cover"
             />
             <div class="work-details">
@@ -1618,7 +1666,7 @@
           >
             <img
               src="https://i.ytimg.com/vi/abG3YfHDb5w/maxresdefault.jpg"
-              alt="I Asked YouTube's CEO Your Hardest Questions"
+              alt="I Asked YouTube's CEO Your Hardest Questions – DP & editor Sam Kras"
               class="work-cover"
             />
             <div class="work-details">
