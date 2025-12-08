@@ -2,15 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
 
     <title>Blog &amp; News – Sam Kras</title>
     <meta
       name="description"
-      content="Blog and news from Director of Photography & video editor Sam Kras – notes on cinematography, editing and projects."
+      content="Blog and news from Director of Photography & video editor Sam Kras – notes on cinematography, editing and recent projects in Serbia, Dubai and Europe."
     />
 
-    <!-- Можно скопировать сюда те же OG и Analytics, что и в index.html -->
+    <!-- Можно при желании добавить твои OG и Analytics, скопировав из index.html -->
 
     <style>
       :root {
@@ -42,8 +45,7 @@
         overflow-x: hidden;
       }
 
-      /* тот же NAVBAR, что и в index.html */
-
+      /* NAVBAR – тот же, что в index.html */
       .main-header {
         position: fixed;
         top: 0;
@@ -103,10 +105,12 @@
         }
       }
 
+      /* Контент страницы блога */
+
       .page-wrapper {
         max-width: 960px;
         margin: 0 auto;
-        padding: 100px 20px 60px; /* 100px сверху под фиксированное меню */
+        padding: 100px 20px 60px; /* 100px сверху под фиксированную шапку */
       }
 
       .page-title {
@@ -120,6 +124,7 @@
         font-size: 18px;
         color: var(--text-secondary);
         margin-bottom: 40px;
+        max-width: 600px;
       }
 
       .posts-list {
@@ -164,10 +169,20 @@
       .back-link:hover {
         text-decoration: underline;
       }
+
+      @media (max-width: 768px) {
+        .page-title {
+          font-size: 32px;
+        }
+
+        .page-subtitle {
+          font-size: 16px;
+        }
+      }
     </style>
   </head>
   <body>
-    <!-- ТО ЖЕ МЕНЮ -->
+    <!-- Общее меню -->
     <header class="main-header">
       <div class="nav-container">
         <div class="nav-logo">SAM KRAS</div>
@@ -182,7 +197,8 @@
     <main class="page-wrapper">
       <h1 class="page-title">Blog &amp; News</h1>
       <p class="page-subtitle">
-        Notes on cinematography, editing and recent projects.
+        Notes on cinematography, editing and recent projects across Serbia,
+        Dubai and Europe.
       </p>
 
       <section class="posts-list">
@@ -204,8 +220,8 @@
           <div class="post-meta">Process · Documentary</div>
           <p class="post-excerpt">
             Notes from weddings and corporate documentaries: how to move, where
-            to stand and how to anticipate key emotional beats without
-            directing people.
+            to stand and how to anticipate key emotional beats without directing
+            people.
           </p>
         </article>
 
@@ -217,6 +233,17 @@
           <p class="post-excerpt">
             How I think about tempo, silence and impact frames when cutting
             music videos and short commercial spots.
+          </p>
+        </article>
+
+        <article class="post-card">
+          <h2 class="post-title">
+            Working between Serbia, Dubai and Europe
+          </h2>
+          <div class="post-meta">Production · Locations</div>
+          <p class="post-excerpt">
+            Practical notes on crews, permits and logistics when moving between
+            Belgrade, Dubai and European locations.
           </p>
         </article>
       </section>
