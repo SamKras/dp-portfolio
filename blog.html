@@ -200,6 +200,17 @@
         max-width: 700px;
       }
 
+      /* ссылки в подзаголовке, чтобы не были фиолетовыми */
+      .page-subtitle a {
+        color: var(--text-secondary);
+        text-decoration: none;
+      }
+
+      .page-subtitle a:hover {
+        color: var(--accent-gold);
+        text-decoration: underline;
+      }
+
       .posts-list {
         display: flex;
         flex-direction: column;
@@ -297,21 +308,29 @@
 Hi everyone,
 I’ve seen a lot of people mention issues with Sony’s stabilization, so I wanted to share something that might help.
 
+
 Some of you probably remember GyroFlow. It used to be a separate program for stabilizing GoPro and some Sony footage, but the problem was that you had to use it outside your main editing workflow.
+
 
 DaVinci Resolve later added gyro-based stabilization for Blackmagic cameras. I used it a lot when I had the BMPCC 6K, and it worked extremely well.
 
+
 Recently I needed to stabilize handheld footage from a Sony FX6. I didn’t have a gimbal on that project, but the client asked for smoother shots in post. I found out that in 2024 GyroFlow released an official plugin for DaVinci Resolve. It lets you stabilize using gyro data from almost any camera directly inside the editor. No external tools, no extra steps. It works great.
+
 
 Plugin link: https://lnkd.in/dyuV4MiZ
 
+
 It also stabilizes regular footage without gyro data, but if your camera records gyros, the result is noticeably better.
+
 
 Small tip for Sony users:
 If you turn off all in-camera stabilization, the gyro-based stabilization works even better. I’ll do a test with the FX6 and an old non-stabilized prime lens soon. If you want to see it, send me a message.
 
+
 The plugin is available for Windows and macOS. They also have versions for Premiere, After Effects, and Final Cut Pro.
 All downloads are here: https://lnkd.in/dhz73Z8x
+
 
 Hope this helps someone
           </p>
@@ -376,6 +395,7 @@ Hope this helps someone
     </main>
   </body>
 </html>
+
 
 
 
