@@ -310,6 +310,17 @@
         max-width: 800px;
       }
 
+      /* ссылки в подзаголовке, чтобы Blog & News не был фиолетовым */
+      .page-subtitle a {
+        color: var(--text-secondary);
+        text-decoration: none;
+      }
+
+      .page-subtitle a:hover {
+        color: var(--accent-gold);
+        text-decoration: underline;
+      }
+
       .section {
         margin-bottom: 80px;
       }
@@ -665,7 +676,7 @@
 
       /* базовый zoom для отдельных работ */
       .work-cover.zoom--romavera {
-        transform: scale(1.2); /* +20% всегда */
+        transform: scale(1.2);
       }
 
       .work-item:hover .work-cover.zoom--romavera {
@@ -673,7 +684,7 @@
       }
 
       .work-cover.zoom--foodsummit {
-        transform: scale(1.15); /* +15% всегда */
+        transform: scale(1.15);
       }
 
       .work-item:hover .work-cover.zoom--foodsummit {
