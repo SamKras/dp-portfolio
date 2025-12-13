@@ -759,53 +759,58 @@
         margin: 0 auto;
       }
 
+      /* обновлённая сетка и карточки Production */
+
       .production-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 25px;
       }
 
-      .production-button {
+      .production-card {
         display: block;
-        padding: 30px 35px;
-        background: var(--accent-gold);
-        border: 1px solid var(--accent-gold);
-        color: var(--bg-primary);
+        background: var(--bg-card);
+        border: 1px solid var(--border-subtle);
+        color: var(--text-primary);
         text-decoration: none;
-        font-size: 17px;
-        font-weight: 500;
-        letter-spacing: 0.3px;
-        text-align: center;
         transition: all 0.4s ease;
-        position: relative;
         overflow: hidden;
       }
 
-      .production-button::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: -100%;
+      .production-thumb-wrapper {
+        width: 100%;
+        height: 190px;
+        overflow: hidden;
+        background: #000;
+      }
+
+      .production-thumb {
         width: 100%;
         height: 100%;
-        background: linear-gradient(
-          90deg,
-          transparent,
-          rgba(255, 255, 255, 0.2),
-          transparent
-        );
-        transition: left 0.5s ease;
+        object-fit: cover;
+        transition: transform 0.6s ease, filter 0.6s ease;
+        filter: grayscale(10%) brightness(0.9);
       }
 
-      .production-button:hover::before {
-        left: 100%;
+      .production-title {
+        padding: 18px 16px 20px;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.3px;
+        text-align: left;
+        background: var(--accent-gold);
+        color: var(--bg-primary);
       }
 
-      .production-button:hover {
-        background: var(--accent-warm);
-        border-color: var(--accent-warm);
-        transform: translateY(-3px);
-        box-shadow: 0 8px 30px rgba(212, 175, 55, 0.4);
+      .production-card:hover {
+        transform: translateY(-4px);
+        border-color: var(--accent-gold);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      }
+
+      .production-card:hover .production-thumb {
+        transform: scale(1.05);
+        filter: grayscale(0) brightness(1);
       }
 
       /* ABOUT */
@@ -908,7 +913,7 @@
       }
 
       .contact-item:hover {
-       	background: var(--bg-hover);
+        background: var(--bg-hover);
         border-color: var(--accent-gold);
       }
 
@@ -1031,6 +1036,14 @@
         .carousel-image,
         .work-cover {
           height: 220px;
+        }
+
+        .production-thumb-wrapper {
+          height: 170px;
+        }
+
+        .production-title {
+          font-size: 15px;
         }
       }
     </style>
@@ -1715,7 +1728,7 @@
       </div>
     </section>
 
-    <!-- PRODUCTION PROJECTS -->
+    <!-- PRODUCTION PROJECTS (обновлённый с изображениями) -->
     <section class="production-section">
       <div class="production-container">
         <div class="production-header">
@@ -1723,61 +1736,125 @@
           <p>Collaborative work with leading production companies.</p>
         </div>
         <div class="production-grid">
+          <!-- Widestreams -->
           <a
             href="https://vimeo.com/768034714?fl=pl&fe=sh"
-            class="production-button"
+            class="production-card"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Widestreams
+            <div class="production-thumb-wrapper">
+              <img
+                src="https://i.vimeocdn.com/video/1536711610-0c6f93c79bb44d2adaf7a62a2fc0c0f5b8c4e7d7-1280x720.jpg"
+                alt="Widestreams – production project"
+                class="production-thumb"
+              />
+            </div>
+            <div class="production-title">Widestreams</div>
           </a>
+
+          <!-- Monza -->
           <a
             href="https://vimeo.com/762355199?fl=pl&fe=sh"
-            class="production-button"
+            class="production-card"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Monza
+            <div class="production-thumb-wrapper">
+              <img
+                src="https://i.vimeocdn.com/video/1531233023-7c6c615f3b0f0b933510d8bca9b1d4aef7a1c87b-1280x720.jpg"
+                alt="Monza – production project"
+                class="production-thumb"
+              />
+            </div>
+            <div class="production-title">Monza</div>
           </a>
+
+          <!-- Nike Air Force_street style -->
           <a
             href="https://vimeo.com/763331251?fl=pl&fe=sh"
-            class="production-button"
+            class="production-card"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Nike Air Force_street style
+            <div class="production-thumb-wrapper">
+              <img
+                src="https://i.vimeocdn.com/video/1532217489-5c8c7a8e8c2b5f46a356b4ae3e5fb727f9d6a649-1280x720.jpg"
+                alt="Nike Air Force street style – production project"
+                class="production-thumb"
+              />
+            </div>
+            <div class="production-title">Nike Air Force_street style</div>
           </a>
+
+          <!-- Gem black collection AmPm -->
           <a
             href="https://vimeo.com/764454665?fl=pl&fe=sh"
-            class="production-button"
+            class="production-card"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Gem black collection AmPm
+            <div class="production-thumb-wrapper">
+              <img
+                src="https://i.vimeocdn.com/video/1533449931-7a4e97c0c7bcdf4a9831b01ff47e8f9f49ee4fb7-1280x720.jpg"
+                alt="Gem black collection AmPm – production project"
+                class="production-thumb"
+              />
+            </div>
+            <div class="production-title">Gem black collection AmPm</div>
           </a>
+
+          <!-- ВИТЯ АК feat. ЗИБА - ГАДЖЕТОЗАВИСИМОСТЬ -->
           <a
             href="https://youtu.be/s8_rfNgc2X0?si=7gYVIllZzG2cNLGr"
-            class="production-button"
+            class="production-card"
             target="_blank"
             rel="noopener noreferrer"
           >
-            ВИТЯ АК feat. ЗИБА - ГАДЖЕТОЗАВИСИМОСТЬ (official music video)
+            <div class="production-thumb-wrapper">
+              <img
+                src="https://i.ytimg.com/vi/s8_rfNgc2X0/maxresdefault.jpg"
+                alt="ВИТЯ АК feat. ЗИБА - ГАДЖЕТОЗАВИСИМОСТЬ (official music video)"
+                class="production-thumb"
+              />
+            </div>
+            <div class="production-title">
+              ВИТЯ АК feat. ЗИБА - ГАДЖЕТОЗАВИСИМОСТЬ (official music video)
+            </div>
           </a>
+
+          <!-- Basketball Zenit -->
           <a
             href="https://vimeo.com/479737861?fl=pl&fe=sh"
-            class="production-button"
+            class="production-card"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Basketball Zenit
+            <div class="production-thumb-wrapper">
+              <img
+                src="https://i.vimeocdn.com/video/1012195954-1e695b82335e772f4b26f2b29927d5ef9c5c74f0-1280x720.jpg"
+                alt="Basketball Zenit – production project"
+                class="production-thumb"
+              />
+            </div>
+            <div class="production-title">Basketball Zenit</div>
           </a>
+
+          <!-- Zenit new year -->
           <a
             href="https://youtu.be/VXHyYlRqOPU?si=OKvJ4jvnTK3dzrio"
-            class="production-button"
+            class="production-card"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Zenit new year
+            <div class="production-thumb-wrapper">
+              <img
+                src="https://i.ytimg.com/vi/VXHyYlRqOPU/maxresdefault.jpg"
+                alt="Zenit new year – production project"
+                class="production-thumb"
+              />
+            </div>
+            <div class="production-title">Zenit new year</div>
           </a>
         </div>
       </div>
@@ -1815,6 +1892,7 @@
     </section>
   </body>
 </html>
+
 
 
 
