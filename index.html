@@ -3,51 +3,76 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1a1a1a">
   
-  <!-- Google Search Console -->
-  <meta name="google-site-verification" content="0gpyoPMXFDAEDswh6mqEQzBx6UcmJWvPXblVJFGJ4pY">
+  <!-- Preconnect для внешних ресурсов -->
+  <link rel="preconnect" href="https://github.com">
+  <link rel="preconnect" href="https://i.ytimg.com">
+  <link rel="dns-prefetch" href="https://raw.githubusercontent.com">
   
-  <!-- PRIMARY SEO -->
-  <title>Sam Krasilnikov – Director of Photography & Video Editor | Commercials, Music Videos, Branded Content</title>
-  <meta name="description" content="International Director of Photography and video editor specialising in commercials, music videos, food & product and branded content. Based in Belgrade, available for shoots in Serbia, Dubai and across Europe.">
-  <meta name="keywords" content="sam krasilnikov, director of photography, cinematographer, dop, videographer, video editor, commercial cinematography, food cinematography, product cinematography, branded content, music video dp, Serbia, Belgrade, Dubai, Europe">
+  <!-- SEO -->
+  <title>Sam Krasilnikov – Director of Photography & Video Editor | Belgrade, Dubai, Europe</title>
+  <meta name="description" content="International Director of Photography and video editor specialising in commercials, music videos, food & product cinematography. Based in Belgrade, available worldwide.">
+  <meta name="keywords" content="director of photography, cinematographer, video editor, commercial videographer, food cinematography, Serbia, Belgrade, Dubai, Europe">
+  <meta name="author" content="Sam Krasilnikov">
   
   <!-- CANONICAL -->
   <link rel="canonical" href="https://samkras.github.io/dp-portfolio/">
   
   <!-- OPEN GRAPH -->
   <meta property="og:title" content="Sam Krasilnikov – Director of Photography & Video Editor">
-  <meta property="og:description" content="Commercials, music videos, food & product and branded content. Director of Photography & video editor based in Belgrade, working in Serbia, Dubai and across Europe.">
+  <meta property="og:description" content="Commercials, music videos, food & product and branded content. Available for shoots in Serbia, Dubai and across Europe.">
   <meta property="og:image" content="https://github.com/SamKras/dp-portfolio/blob/main/Untitled00086404.jpg?raw=true">
   <meta property="og:url" content="https://samkras.github.io/dp-portfolio/">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sam Krasilnikov">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
   
   <!-- TWITTER CARD -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Sam Krasilnikov – Director of Photography & Video Editor">
-  <meta name="twitter:description" content="International Director of Photography and video editor for commercials, music videos, food & product and branded content. Based in Belgrade, available in Serbia, Dubai and across Europe.">
+  <meta name="twitter:description" content="International Director of Photography and video editor for commercials, music videos, food & product and branded content.">
   <meta name="twitter:image" content="https://github.com/SamKras/dp-portfolio/blob/main/Untitled00086404.jpg?raw=true">
+  <meta name="twitter:site" content="@vazivskyfilm">
+  <meta name="twitter:creator" content="@vazivskyfilm">
   
   <!-- STRUCTURED DATA -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "@id": "https://samkras.github.io/dp-portfolio/#person",
-    "name": "Sam Krasilnikov",
-    "jobTitle": "Director of Photography & Video Editor",
-    "description": "International Director of Photography and video editor specialising in commercials, music videos, food & product and branded content.",
+    "@type": "WebPage",
+    "name": "Sam Krasilnikov – Director of Photography & Video Editor",
+    "description": "Commercial cinematography and video editing services",
     "url": "https://samkras.github.io/dp-portfolio/",
-    "image": "https://github.com/SamKras/dp-portfolio/blob/main/Untitled00086404.jpg?raw=true",
-    "sameAs": ["https://instagram.com/vazivskyfilm"],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Belgrade",
-      "addressCountry": "RS"
+    "primaryImageOfPage": "https://github.com/SamKras/dp-portfolio/blob/main/Untitled00086404.jpg?raw=true",
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://samkras.github.io/dp-portfolio/"
+      }]
     },
-    "areaServed": ["Serbia", "Dubai", "Europe"]
+    "mainEntity": {
+      "@type": "Person",
+      "@id": "https://samkras.github.io/dp-portfolio/#person",
+      "name": "Sam Krasilnikov",
+      "jobTitle": "Director of Photography & Video Editor",
+      "description": "International Director of Photography and video editor specialising in commercials, music videos, food & product and branded content.",
+      "image": "https://github.com/SamKras/dp-portfolio/blob/main/Untitled00086404.jpg?raw=true",
+      "url": "https://samkras.github.io/dp-portfolio/",
+      "sameAs": ["https://instagram.com/vazivskyfilm"],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Belgrade",
+        "addressCountry": "RS"
+      },
+      "areaServed": ["Serbia", "Dubai", "Europe"],
+      "knowsAbout": ["Cinematography", "Video Editing", "Commercial Production", "Food Photography", "Music Videos"]
+    }
   }
   </script>
   
@@ -57,15 +82,21 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-98GWYJHHSN');
+    gtag('config', 'G-98GWYJHHSN', {
+      'transport_type': 'beacon',
+      'anonymize_ip': true
+    });
   </script>
   
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>">
+  
   <style>
+    /* === ОСНОВНЫЕ СТИЛИ === */
     :root {
       --bg-primary: #1a1a1a;
       --bg-secondary: #232323;
       --bg-card: #2a2a2a;
-      --bg-hover: #323232;
       --text-primary: #e8e8e8;
       --text-secondary: #b8b8b8;
       --text-muted: #888888;
@@ -73,12 +104,18 @@
       --accent-warm: #c9a961;
       --border-subtle: #3a3a3a;
       --border-medium: #4a4a4a;
+      --shadow-gold: rgba(212, 175, 55, 0.3);
     }
 
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
     }
 
     body {
@@ -89,17 +126,22 @@
       overflow-x: hidden;
     }
 
-    /* NAVIGATION */
+    /* === НАВИГАЦИЯ === */
     .main-header {
       position: fixed;
       top: 0;
       left: 0;
       right: 0;
       height: 64px;
-      background: rgba(26, 26, 26, 0.9);
+      background: rgba(26, 26, 26, 0.95);
       backdrop-filter: blur(10px);
       border-bottom: 1px solid var(--border-subtle);
       z-index: 1000;
+      transition: transform 0.3s ease;
+    }
+
+    .main-header.hidden {
+      transform: translateY(-100%);
     }
 
     .nav-container {
@@ -118,6 +160,7 @@
       font-size: 14px;
       text-transform: uppercase;
       color: var(--accent-gold);
+      text-decoration: none;
     }
 
     .nav-links {
@@ -134,35 +177,50 @@
       transition: color 0.2s ease;
     }
 
-    .nav-links a:hover {
+    .nav-links a:hover,
+    .nav-links a.active {
       color: var(--accent-gold);
     }
 
-    /* HERO */
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--text-secondary);
+      font-size: 24px;
+      cursor: pointer;
+      padding: 8px;
+    }
+
+    /* === HERO === */
     .hero-dp {
       position: relative;
       width: 100%;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-direction: column;
-      text-align: center;
-      padding: 40px 20px;
-      padding-top: 100px;
-      overflow: hidden;
+      padding: 120px 20px 80px;
       background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+      overflow: hidden;
     }
 
-    .hero-video {
+    .hero-video-container {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .hero-video {
+      width: 100%;
+      height: 100%;
       object-fit: cover;
       opacity: 0.15;
-      filter: grayscale(30%);
+      filter: grayscale(30%) brightness(0.8);
     }
 
     .hero-overlay {
@@ -171,14 +229,16 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(180deg, rgba(26, 26, 26, 0.7) 0%, rgba(26, 26, 26, 0.95) 100%);
+      background: linear-gradient(180deg, rgba(26, 26, 26, 0.7) 0%, rgba(26, 26, 26, 0.9) 100%);
+      z-index: 2;
     }
 
     .hero-content {
       position: relative;
-      z-index: 2;
+      z-index: 3;
       max-width: 900px;
-      animation: fadeInUp 1s ease-out;
+      text-align: center;
+      animation: fadeInUp 0.8s ease-out;
     }
 
     @keyframes fadeInUp {
@@ -206,7 +266,7 @@
     }
 
     .hero-content h1 {
-      font-size: 64px;
+      font-size: clamp(36px, 5vw, 64px);
       font-weight: 300;
       margin-bottom: 16px;
       letter-spacing: -1.5px;
@@ -214,29 +274,32 @@
     }
 
     .hero-content h1 strong {
-      font-weight: 700;
+      font-weight: 600;
       display: block;
       color: var(--accent-gold);
+      background: linear-gradient(45deg, #d4af37, #f7e98e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
 
     .hero-content h2 {
-      font-size: 22px;
-      margin-bottom: 16px;
+      font-size: clamp(18px, 2.5vw, 22px);
+      margin-bottom: 24px;
       font-weight: 300;
-      letter-spacing: 1px;
+      letter-spacing: 0.5px;
       color: var(--text-secondary);
     }
 
     .hero-content p {
-      font-size: 16px;
-      letter-spacing: 0.5px;
+      font-size: clamp(16px, 1.8vw, 18px);
+      letter-spacing: 0.3px;
       max-width: 620px;
-      margin: 0 auto;
+      margin: 0 auto 40px;
       color: var(--text-secondary);
     }
 
     .hero-buttons {
-      margin-top: 40px;
       display: flex;
       gap: 20px;
       justify-content: center;
@@ -244,6 +307,7 @@
     }
 
     .btn-primary {
+      display: inline-block;
       padding: 18px 42px;
       background: var(--accent-gold);
       color: var(--bg-primary);
@@ -251,15 +315,16 @@
       font-weight: 500;
       font-size: 15px;
       border-radius: 2px;
-      transition: all 0.4s ease;
+      transition: all 0.3s ease;
     }
 
     .btn-primary:hover {
       transform: translateY(-2px);
-      box-shadow: 0 10px 40px rgba(212, 175, 55, 0.3);
+      box-shadow: 0 10px 30px var(--shadow-gold);
     }
 
     .btn-secondary {
+      display: inline-block;
       padding: 18px 42px;
       border: 1px solid var(--border-medium);
       color: var(--text-primary);
@@ -268,7 +333,7 @@
       font-size: 15px;
       border-radius: 2px;
       background: rgba(42, 42, 42, 0.5);
-      transition: all 0.4s ease;
+      transition: all 0.3s ease;
     }
 
     .btn-secondary:hover {
@@ -277,7 +342,7 @@
       transform: translateY(-2px);
     }
 
-    /* SERVICES */
+    /* === SERVICES === */
     .services-section {
       background: var(--bg-secondary);
       padding: 120px 40px;
@@ -323,7 +388,7 @@
     }
 
     .service-card:hover {
-      background: var(--bg-hover);
+      background: var(--bg-card);
       border-color: var(--accent-gold);
       transform: translateY(-5px);
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -343,7 +408,7 @@
       line-height: 1.7;
     }
 
-    /* FEATURED */
+    /* === FEATURED === */
     .featured-section {
       background: var(--bg-primary);
       padding: 140px 30px;
@@ -430,7 +495,7 @@
       letter-spacing: 1px;
     }
 
-    /* CAROUSEL */
+    /* === CAROUSEL === */
     .carousel-section {
       background: var(--bg-secondary);
       padding: 100px 0;
@@ -464,6 +529,7 @@
       padding: 0 30px 30px;
       scrollbar-width: thin;
       scrollbar-color: var(--accent-gold) var(--bg-card);
+      -webkit-overflow-scrolling: touch;
     }
 
     .carousel-wrapper::-webkit-scrollbar {
@@ -477,10 +543,6 @@
     .carousel-wrapper::-webkit-scrollbar-thumb {
       background: var(--accent-gold);
       border-radius: 4px;
-    }
-
-    .carousel-wrapper::-webkit-scrollbar-thumb:hover {
-      background: var(--accent-warm);
     }
 
     .carousel-track {
@@ -532,7 +594,7 @@
       color: var(--text-primary);
     }
 
-    /* WORK GRIDS */
+    /* === DOCUMENTARY WORK (ИСПРАВЛЕНО) === */
     .work-section {
       background: var(--bg-secondary);
       padding: 100px 20px;
@@ -578,33 +640,34 @@
       display: block;
     }
 
-    .work-item:hover .work-cover {
-      transform: scale(1.05);
-      filter: brightness(1.1);
-    }
-
-    .work-cover {
+    .work-image-wrapper {
+      position: relative;
       width: 100%;
       height: 280px;
-      object-fit: cover;
-      transition: transform 0.6s ease, filter 0.6s ease;
+      overflow: hidden;
       border: 1px solid var(--border-subtle);
+      background: #000;
     }
 
-    .work-cover.zoom--romavera {
-      transform: scale(1.2);
+    .work-image-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .work-item:hover .work-cover.zoom--romavera {
-      transform: scale(1.25);
+    .work-item:hover .work-image-wrapper img {
+      transform: scale(1.05);
     }
 
-    .work-cover.zoom--foodsummit {
-      transform: scale(1.15);
+    /* Для конкретных изображений настраиваем позиционирование */
+    .work-image-wrapper.romavera img {
+      object-position: center 25%;
     }
 
-    .work-item:hover .work-cover.zoom--foodsummit {
-      transform: scale(1.2);
+    .work-image-wrapper.foodsummit img {
+      object-position: center 40%;
     }
 
     .work-details {
@@ -626,7 +689,7 @@
       letter-spacing: 0.8px;
     }
 
-    /* PHILOSOPHY */
+    /* === PHILOSOPHY === */
     .philosophy-section {
       background: var(--bg-card);
       padding: 120px 40px;
@@ -656,6 +719,7 @@
       color: var(--text-secondary);
     }
 
+    /* === SELECTED EDITS === */
     .interview-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -664,7 +728,7 @@
       margin: 0 auto;
     }
 
-    /* PRODUCTION */
+    /* === PRODUCTION TEAM PROJECTS (ИСПРАВЛЕНО) === */
     .production-section {
       background: var(--bg-primary);
       padding: 120px 40px;
@@ -715,7 +779,10 @@
       width: 100%;
       height: 190px;
       overflow: hidden;
-      background: #000;
+      background: linear-gradient(135deg, var(--bg-card) 0%, #333 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .production-thumb {
@@ -724,6 +791,50 @@
       object-fit: cover;
       transition: transform 0.6s ease, filter 0.6s ease;
       filter: grayscale(10%) brightness(0.9);
+    }
+
+    .production-thumb-icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      color: var(--text-secondary);
+      transition: all 0.4s ease;
+    }
+
+    .production-thumb-icon svg {
+      width: 64px;
+      height: 64px;
+      stroke: var(--accent-gold);
+      opacity: 0.7;
+      transition: all 0.4s ease;
+    }
+
+    .production-thumb-label {
+      font-size: 12px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      transition: color 0.4s ease;
+    }
+
+    .production-card:hover .production-thumb-icon {
+      color: var(--accent-gold);
+    }
+
+    .production-card:hover .production-thumb-icon svg {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+
+    .production-card:hover .production-thumb-label {
+      color: var(--text-secondary);
+    }
+
+    .production-card:hover .production-thumb {
+      transform: scale(1.05);
+      filter: grayscale(0) brightness(1);
     }
 
     .production-title {
@@ -742,12 +853,7 @@
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     }
 
-    .production-card:hover .production-thumb {
-      transform: scale(1.05);
-      filter: grayscale(0) brightness(1);
-    }
-
-    /* ABOUT */
+    /* === ABOUT === */
     #about {
       background: var(--bg-secondary);
       padding: 120px 40px;
@@ -803,7 +909,7 @@
       text-transform: uppercase;
     }
 
-    /* CONTACT */
+    /* === CONTACT === */
     #contact {
       background: var(--bg-primary);
       padding: 120px 40px;
@@ -845,7 +951,7 @@
     }
 
     .contact-item:hover {
-      background: var(--bg-hover);
+      background: var(--bg-card);
       border-color: var(--accent-gold);
     }
 
@@ -859,7 +965,7 @@
       color: var(--accent-gold);
     }
 
-    /* ADAPTIVE */
+    /* === ADAPTIVE === */
     @media (max-width: 1400px) {
       .featured-grid {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -877,131 +983,229 @@
 
     @media (max-width: 768px) {
       .nav-links {
-        gap: 14px;
-        font-size: 12px;
+        display: none;
+        position: fixed;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background: var(--bg-primary);
+        flex-direction: column;
+        padding: 20px;
+        gap: 16px;
+        border-bottom: 1px solid var(--border-subtle);
+        z-index: 999;
       }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .mobile-menu-btn {
+        display: block;
+      }
+
       .nav-container {
         padding: 0 12px;
       }
+
       .hero-dp {
         height: auto;
         min-height: 100vh;
         padding: 100px 20px 60px;
       }
+
       .hero-content h1 {
         font-size: 34px;
         line-height: 1.2;
       }
+
       .hero-content h2 {
         font-size: 18px;
       }
+
       .hero-content p {
         font-size: 14px;
       }
+
       .hero-buttons {
         flex-direction: column;
         align-items: stretch;
+        gap: 12px;
       }
+
       .btn-primary, .btn-secondary {
         width: 100%;
         text-align: center;
       }
+
       .featured-title {
         font-size: 36px;
       }
+
       .carousel-title, .work-title {
         font-size: 30px;
       }
+
       .services-section, .featured-section, .carousel-section, .work-section, .philosophy-section, #about, .production-section, #contact {
         padding: 60px 20px;
       }
+
       .work-grid, .interview-grid {
         grid-template-columns: 1fr;
       }
+
       .featured-grid {
         grid-template-columns: 1fr;
       }
+
       .carousel-item {
         width: 280px;
       }
+
       .production-grid {
         grid-template-columns: 1fr;
       }
+
       .philosophy-quote {
         padding: 0 10px;
         font-size: 18px;
       }
+
       #about p {
         font-size: 18px;
       }
+
       .featured-image {
         height: 260px;
       }
-      .carousel-image, .work-cover {
+
+      .carousel-image, .work-image-wrapper {
         height: 220px;
       }
+
       .production-thumb-wrapper {
         height: 170px;
       }
+
+      .production-thumb-icon svg {
+        width: 48px;
+        height: 48px;
+      }
+
       .production-title {
         font-size: 15px;
       }
+    }
+
+    @media (max-width: 480px) {
+      .hero-content h1 {
+        font-size: 28px;
+      }
+
+      .hero-content h2 {
+        font-size: 16px;
+      }
+
+      .hero-badge {
+        font-size: 12px;
+        padding: 6px 16px;
+      }
+    }
+
+    /* === ACCESSIBILITY === */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    a:focus,
+    button:focus {
+      outline: 2px solid var(--accent-gold);
+      outline-offset: 3px;
     }
   </style>
 </head>
 <body>
   <!-- HEADER -->
-  <header class="main-header">
+  <header class="main-header" role="banner">
     <div class="nav-container">
-      <div class="nav-logo">SAM KRASILNIKOV</div>
-      <nav class="nav-links">
-        <a href="index.html">Home</a>
+      <a href="index.html" class="nav-logo" aria-label="Sam Krasilnikov - Home">SAM KRASILNIKOV</a>
+      
+      <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+        ☰
+      </button>
+      
+      <nav class="nav-links" role="navigation" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
         <a href="portfolio.html">Portfolio</a>
         <a href="blog.html">Blog & News</a>
-        <a href="#contact">Contacts</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <!-- HERO -->
-  <section class="hero-dp">
-    <video class="hero-video" autoplay muted loop playsinline poster="https://github.com/SamKras/dp-portfolio/blob/main/Untitled00086404.jpg?raw=true">
-      <source src="https://raw.githubusercontent.com/SamKras/dp-portfolio/main/videos/showreel.mp4" type="video/mp4">
-    </video>
-    <div class="hero-overlay"></div>
+  <section class="hero-dp" role="banner" aria-label="Introduction">
+    <div class="hero-video-container">
+      <video class="hero-video" autoplay muted loop playsinline 
+             poster="https://github.com/SamKras/dp-portfolio/blob/main/Untitled00086404.jpg?raw=true"
+             preload="metadata"
+             aria-hidden="true">
+        <source src="https://github.com/SamKras/dp-portfolio/raw/main/videos/showreel.mp4" type="video/mp4">
+        <img src="https://github.com/SamKras/dp-portfolio/blob/main/Untitled00086404.jpg?raw=true" 
+             alt="Sam Krasilnikov showreel preview" 
+             loading="eager"
+             width="1920"
+             height="1080">
+      </video>
+      <div class="hero-overlay"></div>
+    </div>
+    
     <div class="hero-content">
-      <div class="hero-badge">Director of Photography · Video Editor</div>
+      <span class="hero-badge" aria-label="Professional title">Director of Photography · Video Editor</span>
       <h1><strong>SAM KRASILNIKOV</strong></h1>
       <h2>Commercials · Music Videos · Branded Content — Serbia, Dubai, Europe</h2>
       <p>Director of Photography and video editor based in Belgrade. Available for shoots in Serbia, Dubai and across Europe.</p>
+      
       <div class="hero-buttons">
-        <a href="#featured" class="btn-primary">View Portfolio</a>
-        <a href="#contact" class="btn-secondary">Get in Touch</a>
+        <a href="#featured" class="btn-primary" aria-label="View portfolio projects">View Portfolio</a>
+        <a href="#contact" class="btn-secondary" aria-label="Contact Sam Krasilnikov">Get in Touch</a>
       </div>
     </div>
   </section>
 
   <!-- SERVICES -->
-  <section class="services-section">
+  <section class="services-section" aria-labelledby="services-heading">
     <div class="services-container">
       <div class="services-header">
-        <h2>Services</h2>
+        <h2 id="services-heading">Services</h2>
         <p>Cinematography and editing for brands, agencies and artists in Serbia, Dubai and across Europe.</p>
       </div>
-      <div class="services-grid">
-        <div class="service-card">
+      
+      <div class="services-grid" role="list">
+        <div class="service-card" role="listitem">
           <h3>Commercial Production</h3>
           <p>High-end commercial cinematography for brands that demand excellence.</p>
         </div>
-        <div class="service-card">
+        
+        <div class="service-card" role="listitem">
           <h3>Food & Product</h3>
           <p>Precise lighting and composition that makes products irresistible.</p>
         </div>
-        <div class="service-card">
+        
+        <div class="service-card" role="listitem">
           <h3>Corporate & Tech</h3>
           <p>Clean, modern visuals for innovative companies.</p>
         </div>
-        <div class="service-card">
+        
+        <div class="service-card" role="listitem">
           <h3>Documentary</h3>
           <p>Authentic storytelling with cinematic quality.</p>
         </div>
@@ -1010,16 +1214,28 @@
   </section>
 
   <!-- FEATURED PROJECTS -->
-  <section id="featured" class="featured-section">
+  <section id="featured" class="featured-section" aria-labelledby="featured-heading">
     <div class="featured-container">
       <div class="featured-header">
-        <h2 class="featured-title">Selected Work</h2>
+        <h2 id="featured-heading" class="featured-title">Selected Work</h2>
         <p class="featured-subtitle">Featured projects that showcase my approach to visual storytelling.</p>
       </div>
-      <div class="featured-grid">
+      
+      <div class="featured-grid" role="list">
         <!-- Able -->
-        <a href="https://youtu.be/8fKJ1K_5ork" class="featured-item" target="_blank" rel="noopener noreferrer">
-          <img src="https://github.com/SamKras/dp-portfolio/blob/main/IMG_0625.jpg?raw=true" alt="Able Dubai commercial" class="featured-image" loading="lazy">
+        <a href="https://youtu.be/8fKJ1K_5ork" 
+           class="featured-item" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View Able commercial project">
+          <img src="https://github.com/SamKras/dp-portfolio/blob/main/IMG_0625.jpg?raw=true" 
+               alt="Able commercial campaign shot in Dubai by Director of Photography Sam Krasilnikov"
+               class="featured-image"
+               loading="lazy"
+               width="600"
+               height="400"
+               decoding="async">
           <div class="featured-info">
             <h3 class="featured-name">Able</h3>
             <p class="featured-role">Director of Photography · Director</p>
@@ -1027,8 +1243,19 @@
         </a>
 
         <!-- Webium -->
-        <a href="https://youtu.be/yjb0rXSOx-Y?si=0AL2rV7dAOYlpX6F" class="featured-item" target="_blank" rel="noopener noreferrer">
-          <img src="https://i.ytimg.com/vi/yjb0rXSOx-Y/maxresdefault.jpg" alt="Webium tech product video" class="featured-image" loading="lazy">
+        <a href="https://youtu.be/yjb0rXSOx-Y?si=0AL2rV7dAOYlpX6F" 
+           class="featured-item" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View Webium tech product video">
+          <img src="https://i.ytimg.com/vi/yjb0rXSOx-Y/maxresdefault.jpg" 
+               alt="Webium tech startup product video cinematography by Sam Krasilnikov"
+               class="featured-image"
+               loading="lazy"
+               width="600"
+               height="400"
+               decoding="async">
           <div class="featured-info">
             <h3 class="featured-name">Webium</h3>
             <p class="featured-role">Director of Photography</p>
@@ -1036,8 +1263,19 @@
         </a>
 
         <!-- OuiVerb -->
-        <a href="https://youtu.be/IE_FcqJMRrk?si=-vYjpfBbulJ9O2KH" class="featured-item" target="_blank" rel="noopener noreferrer">
-          <img src="https://github.com/SamKras/dp-portfolio/blob/main/Untitled00086404.jpg?raw=true" alt="OuiVerb SaaS commercial" class="featured-image" loading="lazy">
+        <a href="https://youtu.be/IE_FcqJMRrk?si=-vYjpfBbulJ9O2KH" 
+           class="featured-item" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View OuiVerb SaaS commercial">
+          <img src="https://github.com/SamKras/dp-portfolio/blob/main/Untitled00086404.jpg?raw=true" 
+               alt="OuiVerb SaaS commercial directed and shot by Sam Krasilnikov"
+               class="featured-image"
+               loading="lazy"
+               width="600"
+               height="400"
+               decoding="async">
           <div class="featured-info">
             <h3 class="featured-name">OuiVerb</h3>
             <p class="featured-role">DP · Director · Concept</p>
@@ -1045,8 +1283,19 @@
         </a>
 
         <!-- Digital Anarchy -->
-        <a href="https://youtu.be/5gxw2sool5c" class="featured-item" target="_blank" rel="noopener noreferrer">
-          <img src="https://github.com/SamKras/dp-portfolio/blob/main/482215671_585282684542808_6082995671977878446_n.jpg?raw=true" alt="Digital Anarchy software promo" class="featured-image" loading="lazy">
+        <a href="https://youtu.be/5gxw2sool5c" 
+           class="featured-item" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View Digital Anarchy software promo">
+          <img src="https://github.com/SamKras/dp-portfolio/blob/main/482215671_585282684542808_6082995671977878446_n.jpg?raw=true" 
+               alt="Digital Anarchy software promotion video by Sam Krasilnikov"
+               class="featured-image"
+               loading="lazy"
+               width="600"
+               height="400"
+               decoding="async">
           <div class="featured-info">
             <h3 class="featured-name">Digital Anarchy</h3>
             <p class="featured-role">DP</p>
@@ -1054,8 +1303,19 @@
         </a>
 
         <!-- SAM PIKAR -->
-        <a href="https://youtu.be/yWkzTUF6fyY?si=QnSHmSi2CTozx21W" class="featured-item" target="_blank" rel="noopener noreferrer">
-          <img src="https://i.ytimg.com/vi/yWkzTUF6fyY/maxresdefault.jpg" alt="SAM PIKAR Dancing Alone music video" class="featured-image" loading="lazy">
+        <a href="https://youtu.be/yWkzTUF6fyY?si=QnSHmSi2CTozx21W" 
+           class="featured-item" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View SAM PIKAR music video">
+          <img src="https://i.ytimg.com/vi/yWkzTUF6fyY/maxresdefault.jpg" 
+               alt="SAM PIKAR Dancing Alone music video cinematography by Sam Krasilnikov"
+               class="featured-image"
+               loading="lazy"
+               width="600"
+               height="400"
+               decoding="async">
           <div class="featured-info">
             <h3 class="featured-name">SAM PIKAR - Dancing Alone (music video 2024)</h3>
             <p class="featured-role">Director of Photography</p>
@@ -1066,109 +1326,300 @@
   </section>
 
   <!-- ALL PROJECTS CAROUSEL -->
-  <section class="carousel-section">
+  <section class="carousel-section" aria-labelledby="carousel-heading">
     <div class="carousel-header">
-      <h2 class="carousel-title">All Projects</h2>
+      <h2 id="carousel-heading" class="carousel-title">All Projects</h2>
       <p class="carousel-subtitle">Explore the complete collection of my work.</p>
     </div>
+    
     <div class="carousel-wrapper">
-      <div class="carousel-track">
-        <a href="https://youtu.be/8fKJ1K_5ork" class="carousel-item" target="_blank" rel="noopener noreferrer">
-          <img src="https://github.com/SamKras/dp-portfolio/blob/main/IMG_0625.jpg?raw=true" alt="Able brand film" class="carousel-image" loading="lazy">
+      <div class="carousel-track" role="list">
+        <a href="https://youtu.be/8fKJ1K_5ork" 
+           class="carousel-item" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View Able project">
+          <img src="https://github.com/SamKras/dp-portfolio/blob/main/IMG_0625.jpg?raw=true" 
+               alt="Able brand film commercial"
+               class="carousel-image"
+               loading="lazy"
+               width="400"
+               height="300"
+               decoding="async">
           <div class="carousel-label">Able</div>
         </a>
 
-        <a href="https://youtu.be/yjb0rXSOx-Y?si=0AL2rV7dAOYlpX6F" class="carousel-item" target="_blank" rel="noopener noreferrer">
-          <img src="https://i.ytimg.com/vi/yjb0rXSOx-Y/maxresdefault.jpg" alt="Webium startup commercial" class="carousel-image" loading="lazy">
+        <a href="https://youtu.be/yjb0rXSOx-Y?si=0AL2rV7dAOYlpX6F" 
+           class="carousel-item" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View Webium project">
+          <img src="https://i.ytimg.com/vi/yjb0rXSOx-Y/maxresdefault.jpg" 
+               alt="Webium startup commercial"
+               class="carousel-image"
+               loading="lazy"
+               width="400"
+               height="300"
+               decoding="async">
           <div class="carousel-label">Webium</div>
         </a>
 
-        <a href="https://youtu.be/IE_FcqJMRrk?si=-vYjpfBbulJ9O2KH" class="carousel-item" target="_blank" rel="noopener noreferrer">
-          <img src="https://github.com/SamKras/dp-portfolio/blob/main/Untitled00086404.jpg?raw=true" alt="OuiVerb B2B SaaS ad" class="carousel-image" loading="lazy">
+        <a href="https://youtu.be/IE_FcqJMRrk?si=-vYjpfBbulJ9O2KH" 
+           class="carousel-item" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View OuiVerb project">
+          <img src="https://github.com/SamKras/dp-portfolio/blob/main/Untitled00086404.jpg?raw=true" 
+               alt="OuiVerb B2B SaaS ad"
+               class="carousel-image"
+               loading="lazy"
+               width="400"
+               height="300"
+               decoding="async">
           <div class="carousel-label">OuiVerb</div>
         </a>
 
-        <a href="https://youtu.be/5gxw2sool5c" class="carousel-item" target="_blank" rel="noopener noreferrer">
-          <img src="https://github.com/SamKras/dp-portfolio/blob/main/482215671_585282684542808_6082995671977878446_n.jpg?raw=true" alt="Digital Anarchy plugin promo" class="carousel-image" loading="lazy">
+        <a href="https://youtu.be/5gxw2sool5c" 
+           class="carousel-item" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View Digital Anarchy project">
+          <img src="https://github.com/SamKras/dp-portfolio/blob/main/482215671_585282684542808_6082995671977878446_n.jpg?raw=true" 
+               alt="Digital Anarchy plugin promo"
+               class="carousel-image"
+               loading="lazy"
+               width="400"
+               height="300"
+               decoding="async">
           <div class="carousel-label">Digital Anarchy</div>
         </a>
 
-        <a href="https://youtu.be/yWkzTUF6fyY?si=QnSHmSi2CTozx21W" class="carousel-item" target="_blank" rel="noopener noreferrer">
-          <img src="https://i.ytimg.com/vi/yWkzTUF6fyY/maxresdefault.jpg" alt="SAM PIKAR Dancing Alone" class="carousel-image" loading="lazy">
+        <a href="https://youtu.be/yWkzTUF6fyY?si=QnSHmSi2CTozx21W" 
+           class="carousel-item" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View SAM PIKAR project">
+          <img src="https://i.ytimg.com/vi/yWkzTUF6fyY/maxresdefault.jpg" 
+               alt="SAM PIKAR Dancing Alone music video"
+               class="carousel-image"
+               loading="lazy"
+               width="400"
+               height="300"
+               decoding="async">
           <div class="carousel-label">SAM PIKAR - Dancing Alone</div>
         </a>
 
-        <a href="https://youtu.be/wDLqWjxa50A?si=ZaSrHjigZVgGRL-R" class="carousel-item" target="_blank" rel="noopener noreferrer">
-          <img src="https://i.ytimg.com/vi/wDLqWjxa50A/maxresdefault.jpg" alt="The Maya Secret Dawn music video" class="carousel-image" loading="lazy">
+        <a href="https://youtu.be/wDLqWjxa50A?si=ZaSrHjigZVgGRL-R" 
+           class="carousel-item" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View The Maya Secret project">
+          <img src="https://i.ytimg.com/vi/wDLqWjxa50A/maxresdefault.jpg" 
+               alt="The Maya Secret Dawn music video"
+               class="carousel-image"
+               loading="lazy"
+               width="400"
+               height="300"
+               decoding="async">
           <div class="carousel-label">THE MAYA SECRET | Dawn (Official Video)</div>
         </a>
 
-        <a href="https://youtu.be/AvfhbgXZVdA?si=oXO5WapuRwkAByFK" class="carousel-item" target="_blank" rel="noopener noreferrer">
-          <img src="https://i.ytimg.com/vi/AvfhbgXZVdA/maxresdefault.jpg" alt="Yoga teacher promo video" class="carousel-image" loading="lazy">
+        <a href="https://youtu.be/AvfhbgXZVdA?si=oXO5WapuRwkAByFK" 
+           class="carousel-item" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View yoga teacher promo">
+          <img src="https://i.ytimg.com/vi/AvfhbgXZVdA/maxresdefault.jpg" 
+               alt="Yoga teacher promo video"
+               class="carousel-image"
+               loading="lazy"
+               width="400"
+               height="300"
+               decoding="async">
           <div class="carousel-label">Yoga teacher promo</div>
         </a>
 
-        <a href="https://youtu.be/EnclP_Ol4TM?si=1T5M7wQi3eKE2fCt" class="carousel-item" target="_blank" rel="noopener noreferrer">
-          <img src="https://i.ytimg.com/vi/EnclP_Ol4TM/maxresdefault.jpg" alt="DJ-set by Sveta Rain" class="carousel-image" loading="lazy">
+        <a href="https://youtu.be/EnclP_Ol4TM?si=1T5M7wQi3eKE2fCt" 
+           class="carousel-item" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View DJ-set project">
+          <img src="https://i.ytimg.com/vi/EnclP_Ol4TM/maxresdefault.jpg" 
+               alt="DJ-set by Sveta Rain in the OAZIS"
+               class="carousel-image"
+               loading="lazy"
+               width="400"
+               height="300"
+               decoding="async">
           <div class="carousel-label">DJ-set by Sveta Rain in the OAZIS</div>
         </a>
 
-        <a href="https://youtu.be/CAuBqWmZPQI?si=tv9tZgdNYMMVqUUr" class="carousel-item" target="_blank" rel="noopener noreferrer">
-          <img src="https://i.ytimg.com/vi/CAuBqWmZPQI/maxresdefault.jpg" alt="Vertebra fashion video" class="carousel-image" loading="lazy">
+        <a href="https://youtu.be/CAuBqWmZPQI?si=tv9tZgdNYMMVqUUr" 
+           class="carousel-item" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View Vertebra fashion video">
+          <img src="https://i.ytimg.com/vi/CAuBqWmZPQI/maxresdefault.jpg" 
+               alt="Vertebra for OnlyLyag fashion video"
+               class="carousel-image"
+               loading="lazy"
+               width="400"
+               height="300"
+               decoding="async">
           <div class="carousel-label">Vertebra for OnlyLyag</div>
         </a>
 
-        <a href="https://youtu.be/3ph8M1GX5uY?si=zyMZAlO-6lWvf6-o" class="carousel-item" target="_blank" rel="noopener noreferrer">
-          <img src="https://github.com/SamKras/dp-portfolio/blob/main/IMG_8240.JPG?raw=true" alt="LenaItaly artist portrait" class="carousel-image" loading="lazy">
+        <a href="https://youtu.be/3ph8M1GX5uY?si=zyMZAlO-6lWvf6-o" 
+           class="carousel-item" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View LenaItaly artist project">
+          <img src="https://github.com/SamKras/dp-portfolio/blob/main/IMG_8240.JPG?raw=true" 
+               alt="LenaItaly artist portrait"
+               class="carousel-image"
+               loading="lazy"
+               width="400"
+               height="300"
+               decoding="async">
           <div class="carousel-label">LenaItaly artist</div>
         </a>
 
-        <a href="https://youtu.be/j7dI6yjS4Ho" class="carousel-item" target="_blank" rel="noopener noreferrer">
-          <img src="https://i.ytimg.com/vi/j7dI6yjS4Ho/maxresdefault.jpg" alt="Beyond Kitchen restaurant video" class="carousel-image" loading="lazy">
+        <a href="https://youtu.be/j7dI6yjS4Ho" 
+           class="carousel-item" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View Beyond Kitchen project">
+          <img src="https://i.ytimg.com/vi/j7dI6yjS4Ho/maxresdefault.jpg" 
+               alt="Beyond Kitchen restaurant video"
+               class="carousel-image"
+               loading="lazy"
+               width="400"
+               height="300"
+               decoding="async">
           <div class="carousel-label">Beyond Kitchen</div>
         </a>
 
-        <a href="https://youtu.be/iRKQkaB4SE4" class="carousel-item" target="_blank" rel="noopener noreferrer">
-          <img src="https://i.ytimg.com/vi/iRKQkaB4SE4/hqdefault.jpg" alt="San Jose dance school promo" class="carousel-image" loading="lazy">
+        <a href="https://youtu.be/iRKQkaB4SE4" 
+           class="carousel-item" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View San Jose dance school project">
+          <img src="https://i.ytimg.com/vi/iRKQkaB4SE4/hqdefault.jpg" 
+               alt="San Jose dance school promo"
+               class="carousel-image"
+               loading="lazy"
+               width="400"
+               height="300"
+               decoding="async">
           <div class="carousel-label">San Jose dance school promo</div>
         </a>
       </div>
     </div>
   </section>
-  <!-- DOCUMENTARY WORK -->
-  <section class="work-section">
+
+  <!-- DOCUMENTARY WORK (ИСПРАВЛЕНО) -->
+  <section class="work-section" aria-labelledby="documentary-heading">
     <div class="work-wrapper">
       <div class="work-header">
-        <h2 class="work-title">Documentary Work</h2>
+        <h2 id="documentary-heading" class="work-title">Documentary Work</h2>
         <p class="work-description">Authentic stories captured with respect and intention.</p>
       </div>
-      <div class="work-grid">
-        <a href="https://www.romaverafilms.com/projects/trevor-and-paige" class="work-item" target="_blank" rel="noopener noreferrer">
-          <img src="https://github.com/SamKras/dp-portfolio/blob/main/photo_2025-10-29%2016.11.56%20(1).jpeg?raw=true" alt="RomaVera Weddings" class="work-cover zoom--romavera" loading="lazy">
+      
+      <div class="work-grid" role="list">
+        <!-- RomaVera Weddings -->
+        <a href="https://www.romaverafilms.com/projects/trevor-and-paige" 
+           class="work-item" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View RomaVera Weddings documentary">
+          <div class="work-image-wrapper romavera">
+            <img src="https://github.com/SamKras/dp-portfolio/blob/main/photo_2025-10-29%2016.11.56%20(1).jpeg?raw=true" 
+                 alt="RomaVera Weddings documentary cinematography by Sam Krasilnikov"
+                 class="work-cover"
+                 loading="lazy"
+                 width="400"
+                 height="280"
+                 decoding="async">
+          </div>
           <div class="work-details">
             <h3 class="work-item-title">RomaVera Weddings</h3>
             <p class="work-role">Documentary Cinematographer</p>
           </div>
         </a>
 
-        <a href="https://youtu.be/3WjNXGLG2tc" class="work-item" target="_blank" rel="noopener noreferrer">
-          <img src="https://i.ytimg.com/vi/3WjNXGLG2tc/maxresdefault.jpg" alt="David & Heidi San Francisco Wedding" class="work-cover" loading="lazy">
+        <!-- David & Heidi -->
+        <a href="https://youtu.be/3WjNXGLG2tc" 
+           class="work-item" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View David & Heidi wedding video">
+          <div class="work-image-wrapper">
+            <img src="https://i.ytimg.com/vi/3WjNXGLG2tc/maxresdefault.jpg" 
+                 alt="David & Heidi San Francisco wedding video by Sam Krasilnikov"
+                 class="work-cover"
+                 loading="lazy"
+                 width="400"
+                 height="280"
+                 decoding="async">
+          </div>
           <div class="work-details">
             <h3 class="work-item-title">David & Heidi | San Francisco Wedding Video</h3>
             <p class="work-role">Cinematographer</p>
           </div>
         </a>
 
-        <a href="https://vimeo.com/917596503?fl=pl&fe=sh" class="work-item" target="_blank" rel="noopener noreferrer">
-          <img src="https://github.com/SamKras/dp-portfolio/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202025-12-08%20%D0%B2%2021.16.57.png?raw=true" alt="Food Summit documentary" class="work-cover zoom--foodsummit" loading="lazy">
+        <!-- Food Summit -->
+        <a href="https://vimeo.com/917596503" 
+           class="work-item" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View Food Summit documentary">
+          <div class="work-image-wrapper foodsummit">
+            <img src="https://github.com/SamKras/dp-portfolio/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202025-12-08%20%D0%B2%2021.16.57.png?raw=true" 
+                 alt="Food Summit documentary filmed by Sam Krasilnikov"
+                 class="work-cover"
+                 loading="lazy"
+                 width="400"
+                 height="280"
+                 decoding="async">
+          </div>
           <div class="work-details">
             <h3 class="work-item-title">Food Summit</h3>
             <p class="work-role">Cinematographer</p>
           </div>
         </a>
 
-        <a href="https://www.facebook.com/semyon.krasilnikov.2025/videos/3166986323605184/" class="work-item" target="_blank" rel="noopener noreferrer">
-          <img src="https://i.ytimg.com/vi/_94sYhLpvYE/maxresdefault.jpg" alt="San Francisco Innovation Hub" class="work-cover" loading="lazy">
+        <!-- San Francisco Innovation Hub -->
+        <a href="https://www.facebook.com/semyon.krasilnikov.2025/videos/3166986323605184/" 
+           class="work-item" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View San Francisco Innovation Hub documentary">
+          <div class="work-image-wrapper">
+            <img src="https://i.ytimg.com/vi/_94sYhLpvYE/maxresdefault.jpg" 
+                 alt="San Francisco Innovation Hub corporate documentary by Sam Krasilnikov"
+                 class="work-cover"
+                 loading="lazy"
+                 width="400"
+                 height="280"
+                 decoding="async">
+          </div>
           <div class="work-details">
             <h3 class="work-item-title">San Francisco Innovation Hub</h3>
             <p class="work-role">Docu Corporate Cinematography</p>
@@ -1179,39 +1630,79 @@
   </section>
 
   <!-- PHILOSOPHY -->
-  <section class="philosophy-section">
+  <section class="philosophy-section" aria-labelledby="philosophy-heading">
     <div class="philosophy-container">
-      <h2>Approach</h2>
+      <h2 id="philosophy-heading">Approach</h2>
       <p class="philosophy-quote">I focus on the real behavior of people. My documentary method is simple: observe, feel the rhythm, move with the environment, and stay invisible. The camera should respect the moment rather than shape it.</p>
     </div>
   </section>
 
   <!-- SELECTED EDITS -->
-  <section class="work-section">
+  <section class="work-section" aria-labelledby="edits-heading">
     <div class="work-wrapper">
       <div class="work-header">
-        <h2 class="work-title">Selected Edits</h2>
+        <h2 id="edits-heading" class="work-title">Selected Edits</h2>
         <p class="work-description">Crafting narrative through rhythm and emotion.</p>
       </div>
-      <div class="work-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); max-width: 1400px; margin: 0 auto;">
-        <a href="https://youtube.com/shorts/gObhtyabLVk" class="work-item" target="_blank" rel="noopener noreferrer">
-          <img src="https://i.ytimg.com/vi/gObhtyabLVk/maxresdefault.jpg" alt="Food-truck commercial edit" class="work-cover" loading="lazy">
+      
+      <div class="interview-grid" role="list">
+        <a href="https://youtube.com/shorts/gObhtyabLVk" 
+           class="work-item" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View food-truck commercial edit">
+          <div class="work-image-wrapper">
+            <img src="https://i.ytimg.com/vi/gObhtyabLVk/maxresdefault.jpg" 
+                 alt="Food-truck commercial edit by Sam Krasilnikov"
+                 class="work-cover"
+                 loading="lazy"
+                 width="400"
+                 height="280"
+                 decoding="async">
+          </div>
           <div class="work-details">
             <h3 class="work-item-title">Food-truck commercial</h3>
             <p class="work-role">Editor</p>
           </div>
         </a>
 
-        <a href="https://youtu.be/IE_FcqJMRrk?si=-vYjpfBbulJ9O2KH" class="work-item" target="_blank" rel="noopener noreferrer">
-          <img src="https://github.com/SamKras/dp-portfolio/blob/main/Untitled00086404.jpg?raw=true" alt="OuiVerb commercial edit" class="work-cover" loading="lazy">
+        <a href="https://youtu.be/IE_FcqJMRrk?si=-vYjpfBbulJ9O2KH" 
+           class="work-item" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View OuiVerb commercial edit">
+          <div class="work-image-wrapper">
+            <img src="https://github.com/SamKras/dp-portfolio/blob/main/Untitled00086404.jpg?raw=true" 
+                 alt="OuiVerb commercial edit by Sam Krasilnikov"
+                 class="work-cover"
+                 loading="lazy"
+                 width="400"
+                 height="280"
+                 decoding="async">
+          </div>
           <div class="work-details">
             <h3 class="work-item-title">OuiVerb</h3>
             <p class="work-role">Editor</p>
           </div>
         </a>
 
-        <a href="https://www.instagram.com/food_rockmood?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="work-item" target="_blank" rel="noopener noreferrer">
-          <img src="https://github.com/SamKras/dp-portfolio/blob/main/photo_2025-10-29%2012.16.45.jpeg?raw=true" alt="FoodRockMood Instagram content" class="work-cover" loading="lazy">
+        <a href="https://www.instagram.com/food_rockmood" 
+           class="work-item" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View FoodRockMood Instagram content">
+          <div class="work-image-wrapper">
+            <img src="https://github.com/SamKras/dp-portfolio/blob/main/photo_2025-10-29%2012.16.45.jpeg?raw=true" 
+                 alt="FoodRockMood Instagram content edited by Sam Krasilnikov"
+                 class="work-cover"
+                 loading="lazy"
+                 width="400"
+                 height="280"
+                 decoding="async">
+          </div>
           <div class="work-details">
             <h3 class="work-item-title">FoodRockMood</h3>
             <p class="work-role">Editor</p>
@@ -1222,55 +1713,121 @@
   </section>
 
   <!-- EDITING PHILOSOPHY -->
-  <section class="philosophy-section">
+  <section class="philosophy-section" aria-labelledby="editing-philosophy-heading">
     <div class="philosophy-container">
-      <h2>Editing Philosophy</h2>
+      <h2 id="editing-philosophy-heading">Editing Philosophy</h2>
       <p class="philosophy-quote">I build edits around emotion and rhythm. Cutting is not just assembling — it's choreography. I focus on flow, invisible transitions, and strong internal pacing.</p>
     </div>
   </section>
 
   <!-- INTERVIEWS & PODCASTS -->
-  <section class="work-section">
+  <section class="work-section" aria-labelledby="interviews-heading">
     <div class="work-wrapper">
       <div class="work-header">
-        <h2 class="work-title">Interviews & Podcasts</h2>
+        <h2 id="interviews-heading" class="work-title">Interviews & Podcasts</h2>
         <p class="work-description">Conversations with innovators and creators.</p>
       </div>
-      <div class="interview-grid">
-        <a href="https://youtu.be/c8p9RL6z9QM?si=WOYmIxGPdz3PZYB7" class="work-item" target="_blank" rel="noopener noreferrer">
-          <img src="https://i.ytimg.com/vi/c8p9RL6z9QM/maxresdefault.jpg" alt="Inside CopilotKit with Atai Barkai" class="work-cover" loading="lazy">
+      
+      <div class="interview-grid" role="list">
+        <a href="https://youtu.be/c8p9RL6z9QM?si=WOYmIxGPdz3PZYB7" 
+           class="work-item" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View CopilotKit interview">
+          <div class="work-image-wrapper">
+            <img src="https://i.ytimg.com/vi/c8p9RL6z9QM/maxresdefault.jpg" 
+                 alt="Inside CopilotKit with Atai Barkai interview"
+                 class="work-cover"
+                 loading="lazy"
+                 width="400"
+                 height="280"
+                 decoding="async">
+          </div>
           <div class="work-details">
             <h3 class="work-item-title">Interview Inside CopilotKit with Atai Barkai</h3>
             <p class="work-role">DP · Editor</p>
           </div>
         </a>
 
-        <a href="https://youtu.be/6ldCrrc6Y5U?si=IreCNKOJLOh_2F5u" class="work-item" target="_blank" rel="noopener noreferrer">
-          <img src="https://i.ytimg.com/vi/6ldCrrc6Y5U/maxresdefault.jpg" alt="Burnout and Breakthrough with Paul Gilbert" class="work-cover" loading="lazy">
+        <a href="https://youtu.be/6ldCrrc6Y5U?si=IreCNKOJLOh_2F5u" 
+           class="work-item" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View HealthTech burnout interview">
+          <div class="work-image-wrapper">
+            <img src="https://i.ytimg.com/vi/6ldCrrc6Y5U/maxresdefault.jpg" 
+                 alt="Burnout and Breakthrough in Scaling HealthTech with Paul Gilbert interview"
+                 class="work-cover"
+                 loading="lazy"
+                 width="400"
+                 height="280"
+                 decoding="async">
+          </div>
           <div class="work-details">
             <h3 class="work-item-title">Interview Burnout and Breakthrough in Scaling HealthTech with Paul Gilbert</h3>
             <p class="work-role">DP · Editor</p>
           </div>
         </a>
 
-        <a href="https://youtu.be/A1DJdMRNS-w?si=1TSTW7JlyFggARQn" class="work-item" target="_blank" rel="noopener noreferrer">
-          <img src="https://i.ytimg.com/vi/A1DJdMRNS-w/maxresdefault.jpg" alt="San Francisco Innovation Hub Podcast" class="work-cover" loading="lazy">
+        <a href="https://youtu.be/A1DJdMRNS-w?si=1TSTW7JlyFggARQn" 
+           class="work-item" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View San Francisco Innovation Hub podcast">
+          <div class="work-image-wrapper">
+            <img src="https://i.ytimg.com/vi/A1DJdMRNS-w/maxresdefault.jpg" 
+                 alt="San Francisco Innovation Hub Podcast"
+                 class="work-cover"
+                 loading="lazy"
+                 width="400"
+                 height="280"
+                 decoding="async">
+          </div>
           <div class="work-details">
             <h3 class="work-item-title">Podcast San Francisco Innovation Hub</h3>
             <p class="work-role">DP · Editor</p>
           </div>
         </a>
 
-        <a href="https://youtu.be/Q66gsBJnKKQ?si=lNiVyiBPgStgsUeb" class="work-item" target="_blank" rel="noopener noreferrer">
-          <img src="https://i.ytimg.com/vi/Q66gsBJnKKQ/maxresdefault.jpg" alt="Anthropic CPO Mike Krieger interview" class="work-cover" loading="lazy">
+        <a href="https://youtu.be/Q66gsBJnKKQ?si=lNiVyiBPgStgsUeb" 
+           class="work-item" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View Anthropic CPO interview">
+          <div class="work-image-wrapper">
+            <img src="https://i.ytimg.com/vi/Q66gsBJnKKQ/maxresdefault.jpg" 
+                 alt="Anthropic CPO Mike Krieger interview"
+                 class="work-cover"
+                 loading="lazy"
+                 width="400"
+                 height="280"
+                 decoding="async">
+          </div>
           <div class="work-details">
             <h3 class="work-item-title">Anthropic CPO: How AI Will Build the Next $100M Companies | Mike Krieger</h3>
             <p class="work-role">DP · Editor</p>
           </div>
         </a>
 
-        <a href="https://youtu.be/abG3YfHDb5w?si=WgSM6-UfeoH8oYdB" class="work-item" target="_blank" rel="noopener noreferrer">
-          <img src="https://i.ytimg.com/vi/abG3YfHDb5w/maxresdefault.jpg" alt="YouTube CEO interview" class="work-cover" loading="lazy">
+        <a href="https://youtu.be/abG3YfHDb5w?si=WgSM6-UfeoH8oYdB" 
+           class="work-item" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View YouTube CEO interview">
+          <div class="work-image-wrapper">
+            <img src="https://i.ytimg.com/vi/abG3YfHDb5w/maxresdefault.jpg" 
+                 alt="YouTube CEO interview featuring MrBeast and Logan Paul"
+                 class="work-cover"
+                 loading="lazy"
+                 width="400"
+                 height="280"
+                 decoding="async">
+          </div>
           <div class="work-details">
             <h3 class="work-item-title">I Asked YouTube's CEO Your Hardest Questions (feat MrBeast, Logan Paul & Cleo Abram)</h3>
             <p class="work-role">DP · Editor</p>
@@ -1279,21 +1836,25 @@
       </div>
     </div>
   </section>
+
   <!-- ABOUT -->
-  <section id="about">
+  <section id="about" aria-labelledby="about-heading">
     <div class="about-container">
-      <h2>About</h2>
+      <h2 id="about-heading">About</h2>
       <p>International Director of Photography and video editor based in Belgrade, working across Europe and Dubai. Specialized in commercial cinematography with a strong focus on food, product and lifestyle storytelling, precise lighting, and clean composition.</p>
-      <div class="about-stats">
-        <div class="stat-item">
+      
+      <div class="about-stats" role="list">
+        <div class="stat-item" role="listitem">
           <div class="stat-number">100+</div>
           <div class="stat-label">Projects</div>
         </div>
-        <div class="stat-item">
+        
+        <div class="stat-item" role="listitem">
           <div class="stat-number">50+</div>
           <div class="stat-label">Brands</div>
         </div>
-        <div class="stat-item">
+        
+        <div class="stat-item" role="listitem">
           <div class="stat-number">15+</div>
           <div class="stat-label">Countries</div>
         </div>
@@ -1301,91 +1862,267 @@
     </div>
   </section>
 
-  <!-- PRODUCTION PROJECTS -->
-  <section class="production-section">
+  <!-- PRODUCTION TEAM PROJECTS (ИСПРАВЛЕНО) -->
+  <section class="production-section" aria-labelledby="production-heading">
     <div class="production-container">
       <div class="production-header">
-        <h2>Production Team Projects</h2>
+        <h2 id="production-heading">Production Team Projects</h2>
         <p>Collaborative work with leading production companies.</p>
       </div>
-      <div class="production-grid">
+      
+      <div class="production-grid" role="list">
         <!-- Widestreams -->
-        <a href="https://vimeo.com/768034714?fl=pl&fe=sh" class="production-card" target="_blank" rel="noopener noreferrer">
+        <a href="https://vimeo.com/768034714" 
+           class="production-card" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View Widestreams project">
           <div class="production-thumb-wrapper">
-            <div class="production-thumb" style="background: var(--bg-card);"></div>
+            <div class="production-thumb production-thumb-icon" aria-hidden="true">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 7l-7 5 7 5V7z"></path>
+                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+              </svg>
+              <span class="production-thumb-label">Production Project</span>
+            </div>
           </div>
           <div class="production-title">Widestreams</div>
         </a>
 
         <!-- Monza -->
-        <a href="https://vimeo.com/762355199?fl=pl&fe=sh" class="production-card" target="_blank" rel="noopener noreferrer">
+        <a href="https://vimeo.com/762355199" 
+           class="production-card" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View Monza project">
           <div class="production-thumb-wrapper">
-            <div class="production-thumb" style="background: var(--bg-card);"></div>
+            <div class="production-thumb production-thumb-icon" aria-hidden="true">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 7l-7 5 7 5V7z"></path>
+                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+              </svg>
+              <span class="production-thumb-label">Production Project</span>
+            </div>
           </div>
           <div class="production-title">Monza</div>
         </a>
 
         <!-- Nike Air Force -->
-        <a href="https://vimeo.com/763331251?fl=pl&fe=sh" class="production-card" target="_blank" rel="noopener noreferrer">
+        <a href="https://vimeo.com/763331251" 
+           class="production-card" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View Nike Air Force project">
           <div class="production-thumb-wrapper">
-            <div class="production-thumb" style="background: var(--bg-card);"></div>
+            <div class="production-thumb production-thumb-icon" aria-hidden="true">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 7l-7 5 7 5V7z"></path>
+                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+              </svg>
+              <span class="production-thumb-label">Production Project</span>
+            </div>
           </div>
-          <div class="production-title">Nike Air Force_street style</div>
+          <div class="production-title">Nike Air Force Street Style</div>
         </a>
 
         <!-- Gem black collection AmPm -->
-        <a href="https://vimeo.com/764454665?fl=pl&fe=sh" class="production-card" target="_blank" rel="noopener noreferrer">
+        <a href="https://vimeo.com/764454665" 
+           class="production-card" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View Gem black collection AmPm project">
           <div class="production-thumb-wrapper">
-            <div class="production-thumb" style="background: var(--bg-card);"></div>
+            <div class="production-thumb production-thumb-icon" aria-hidden="true">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 7l-7 5 7 5V7z"></path>
+                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+              </svg>
+              <span class="production-thumb-label">Production Project</span>
+            </div>
           </div>
-          <div class="production-title">Gem black collection AmPm</div>
+          <div class="production-title">Gem Black Collection AmPm</div>
         </a>
 
         <!-- ВИТЯ АК feat. ЗИВЭ - ГАДЖЕТОЗАВИСИМОСТЬ -->
-        <a href="https://youtu.be/s8_rfNgc2X0?si=7gYVIllZzG2cNLGr" class="production-card" target="_blank" rel="noopener noreferrer">
+        <a href="https://youtu.be/s8_rfNgc2X0?si=7gYVIllZzG2cNLGr" 
+           class="production-card" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View ВИТЯ АК music video project">
           <div class="production-thumb-wrapper">
-            <img src="https://i.ytimg.com/vi/s8_rfNgc2X0/maxresdefault.jpg" alt="ВИТЯ АК music video" class="production-thumb" loading="lazy">
+            <img src="https://i.ytimg.com/vi/s8_rfNgc2X0/maxresdefault.jpg" 
+                 alt="ВИТЯ АК feat. ЗИВЭ - ГАДЖЕТОЗАВИСИМОСТЬ music video thumbnail"
+                 class="production-thumb"
+                 loading="lazy"
+                 width="400"
+                 height="225"
+                 decoding="async">
           </div>
           <div class="production-title">ВИТЯ АК feat. ЗИВЭ - ГАДЖЕТОЗАВИСИМОСТЬ (official music video)</div>
         </a>
 
         <!-- Basketball Zenit -->
-        <a href="https://vimeo.com/479737861?fl=pl&fe=sh" class="production-card" target="_blank" rel="noopener noreferrer">
+        <a href="https://vimeo.com/479737861" 
+           class="production-card" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View Basketball Zenit project">
           <div class="production-thumb-wrapper">
-            <div class="production-thumb" style="background: var(--bg-card);"></div>
+            <div class="production-thumb production-thumb-icon" aria-hidden="true">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 7l-7 5 7 5V7z"></path>
+                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+              </svg>
+              <span class="production-thumb-label">Production Project</span>
+            </div>
           </div>
           <div class="production-title">Basketball Zenit</div>
         </a>
 
         <!-- Zenit new year -->
-        <a href="https://youtu.be/VXHyYlRqOPU?si=OKvJ4jvnTK3dzrio" class="production-card" target="_blank" rel="noopener noreferrer">
+        <a href="https://youtu.be/VXHyYlRqOPU?si=OKvJ4jvnTK3dzrio" 
+           class="production-card" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           role="listitem"
+           aria-label="View Zenit new year project">
           <div class="production-thumb-wrapper">
-            <img src="https://i.ytimg.com/vi/VXHyYlRqOPU/maxresdefault.jpg" alt="Zenit new year" class="production-thumb" loading="lazy">
+            <img src="https://i.ytimg.com/vi/VXHyYlRqOPU/maxresdefault.jpg" 
+                 alt="Zenit new year project thumbnail"
+                 class="production-thumb"
+                 loading="lazy"
+                 width="400"
+                 height="225"
+                 decoding="async">
           </div>
-          <div class="production-title">Zenit new year</div>
+          <div class="production-title">Zenit New Year</div>
         </a>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact">
+  <section id="contact" aria-labelledby="contact-heading">
     <div class="contact-container">
-      <h2>Let's Work Together</h2>
+      <h2 id="contact-heading">Let's Work Together</h2>
       <p class="contact-subtitle">Ready to create something exceptional? Get in touch about projects in Serbia, Dubai or across Europe.</p>
-      <div class="contact-info">
-        <div class="contact-item">
-          <a href="mailto:krasilniksem@gmail.com">krasilniksem@gmail.com</a>
+      
+      <div class="contact-info" role="list">
+        <div class="contact-item" role="listitem">
+          <a href="mailto:krasilniksem@gmail.com" aria-label="Send email to Sam Krasilnikov">krasilniksem@gmail.com</a>
         </div>
-        <div class="contact-item">
-          <a href="https://instagram.com/vazivskyfilm" target="_blank" rel="noopener noreferrer">@vazivskyfilm</a>
+        
+        <div class="contact-item" role="listitem">
+          <a href="https://instagram.com/vazivskyfilm" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             aria-label="Visit Sam's Instagram profile">@vazivskyfilm</a>
         </div>
-        <div class="contact-item">Serbia · Dubai · EU / Worldwide</div>
+        
+        <div class="contact-item" role="listitem">Serbia · Dubai · EU / Worldwide</div>
       </div>
-      <a href="mailto:krasilniksem@gmail.com" class="btn-primary">Send a Message</a>
+      
+      <a href="mailto:krasilniksem@gmail.com" class="btn-primary" aria-label="Send email to Sam">Send a Message</a>
     </div>
   </section>
 
+  <!-- JavaScript -->
+  <script>
+    // Мобильное меню
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuBtn = document.querySelector('.mobile-menu-btn');
+      const navLinks = document.querySelector('.nav-links');
+      
+      if (menuBtn) {
+        menuBtn.addEventListener('click', function() {
+          const isExpanded = this.getAttribute('aria-expanded') === 'true';
+          this.setAttribute('aria-expanded', !isExpanded);
+          navLinks.classList.toggle('active');
+          this.innerHTML = isExpanded ? '☰' : '✕';
+        });
+      }
+      
+      // Закрытие меню при клике на ссылку
+      document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+          if (navLinks.classList.contains('active')) {
+            navLinks.classList.remove('active');
+            menuBtn.setAttribute('aria-expanded', 'false');
+            menuBtn.innerHTML = '☰';
+          }
+        });
+      });
+      
+      // Smooth scroll для якорных ссылок
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          if (href === '#') return;
+          
+          e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) {
+            const headerHeight = document.querySelector('.main-header').offsetHeight;
+            const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+            const offsetPosition = targetPosition - headerHeight;
+            
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            });
+            
+            history.pushState(null, null, href);
+          }
+        });
+      });
+      
+      // Скрытие навигации при скролле
+      let lastScrollTop = 0;
+      const header = document.querySelector('.main-header');
+      
+      window.addEventListener('scroll', () => {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        if (scrollTop > lastScrollTop && scrollTop > 100) {
+          header.classList.add('hidden');
+        } else {
+          header.classList.remove('hidden');
+        }
+        
+        lastScrollTop = scrollTop;
+      });
+      
+      // Ленивая загрузка изображений
+      if ('IntersectionObserver' in window) {
+        const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+        const imageObserver = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const img = entry.target;
+              const src = img.getAttribute('data-src');
+              if (src) {
+                img.src = src;
+                img.removeAttribute('data-src');
+              }
+              imageObserver.unobserve(img);
+            }
+          });
+        });
+        
+        lazyImages.forEach(img => {
+          if (!img.complete) {
+            imageObserver.observe(img);
+          }
+        });
+      }
+    });
+  </script>
 </body>
 </html>
 
